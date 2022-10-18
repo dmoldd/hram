@@ -1,0 +1,87 @@
+.hero {
+  width: 1600px;
+  position: relative;
+  min-height: 900px;
+  background: url("../img/hero/hero-img170x170.jpg"),
+              url("../img/hero/hero-img678x407.jpg"),
+              url("../img/hero/hero-rect.svg"),
+              url("../img/hero/hero-rect.svg"),
+              url("../img/hero/hero-rect.svg"),
+              url("../img/hero/hero-rect.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 21px, 902px 135px, 454px 32px, 252px 137px, 651px 136px, 453px 513px;
+  background-size: 170px 170px, 678px 407px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
+}
+
+.hero__title {
+  margin: 0 0 0 356px;
+  width: 780px;
+  height: 496px;
+}
+
+.hero__list {
+  display: flex;
+  margin: 147px 0 0 0;
+  text-align: start;
+}
+
+.hero__list-item {
+  background-color: $sky;
+  margin: 0 2px 0 0;
+  padding: 20px;
+  &:first-child {
+    width: 527px;
+  }
+
+  &:nth-child(2){
+    width: 524px;
+  }
+
+  &:last-child {
+    width: 504px;
+    margin: 0;
+  }
+}
+
+.hero__list-item-title {
+  display: block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 21px;
+  color: $white1;
+  margin: 15px 0 0 0;
+  // text-align: center;
+}
+
+.hero__text {
+  font-size: 24px;
+  // text-align: center;
+  color: $white2;
+  margin: 15px 0 0 0;
+}
+
+.hero__priest-info {
+  position: absolute;
+  top: 300px;
+  left: 22px;
+  display: block;
+  width: 214px;
+  min-height: 200px;
+  // text-align: start;
+}
+
+.hero__priest-title {
+
+}
+
+.hero__priest-name {
+
+}
+
+.hero__priest-text {
+
+}
+
+.hero__priest-phone {
+
+}

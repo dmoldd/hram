@@ -1,0 +1,16 @@
+.main-nav__list {
+  display: flex;
+  margin: 0;
+  padding: 34px 0 0 0;
+}
+
+.main-nav__item {
+  margin: 0 59px 0 0;
+  padding: 0 0 6px 0;
+  font-size: 19px;
+  line-height: 21px;
+
+  &:hover {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%) bottom / 100% 1px no-repeat;
+  }
+}

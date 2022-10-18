@@ -1,4 +1,318 @@
 html {
-  background-color: red;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+a {
+  background-color: transparent;
+  color: inherit;
+}
+
+abbr[title] {
+  border-bottom: none;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  outline-offset: -2px;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page__body {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  width: 1600px;
+  padding: 0 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.wrapper {
+  box-shadow: 10px 0 19px -17px #000000, -10px 0 19px -17px #000000;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 1600px;
+  margin: 0 auto;
+  background-image: url("../img/hero/background1200x707.svg");
+  background-repeat: no-repeat;
+  background-position: center -76px;
+  background-size: 1200px 739px;
+}
+
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+}
+
+.header {
+  min-height: 119px;
+}
+
+.header .container {
+  position: relative;
+  min-height: 119px;
+}
+
+.header__logo {
+  position: absolute;
+  right: 19px;
+  top: 20px;
+  width: 40px;
+  height: 50px;
+}
+
+.main-nav__list {
+  display: flex;
+  margin: 0;
+  padding: 34px 0 0 0;
+}
+
+.main-nav__item {
+  margin: 0 59px 0 0;
+  padding: 0 0 6px 0;
+  font-size: 19px;
+  line-height: 21px;
+}
+.main-nav__item:hover {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%) bottom/100% 1px no-repeat;
+}
+
+.hero {
+  width: 1600px;
+  position: relative;
+  min-height: 900px;
+  background: url("../img/hero/hero-img170x170.jpg"), url("../img/hero/hero-img678x407.jpg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
+  background-repeat: no-repeat;
+  background-position: 20px 21px, 902px 135px, 454px 32px, 252px 137px, 651px 136px, 453px 513px;
+  background-size: 170px 170px, 678px 407px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
+}
+
+.hero__title {
+  margin: 0 0 0 356px;
+  width: 780px;
+  height: 496px;
+}
+
+.hero__list {
+  display: flex;
+  margin: 147px 0 0 0;
+  text-align: start;
+}
+
+.hero__list-item {
+  background-color: #5b8ccb;
+  margin: 0 2px 0 0;
+  padding: 20px;
+}
+.hero__list-item:first-child {
+  width: 527px;
+}
+.hero__list-item:nth-child(2) {
+  width: 524px;
+}
+.hero__list-item:last-child {
+  width: 504px;
+  margin: 0;
+}
+
+.hero__list-item-title {
+  display: block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 21px;
+  color: #fdfdfd;
+  margin: 15px 0 0 0;
+}
+
+.hero__text {
+  font-size: 24px;
+  color: #cecece;
+  margin: 15px 0 0 0;
+}
+
+.hero__priest-info {
+  position: absolute;
+  top: 300px;
+  left: 22px;
+  display: block;
+  width: 214px;
+  min-height: 200px;
 }
 /*# sourceMappingURL=style.css.map */
