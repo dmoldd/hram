@@ -1,0 +1,62 @@
+.history {
+}
+
+.history .container {
+  margin: 0 0 0 0;
+  border-top: 2px solid $line;
+}
+
+.history__article {
+  min-height: 3500px;
+  background: $line, url("../img/history/history-main1560x680.jpg"), url("../img/history/history1-634x610.jpg"), url("../img/history/history2-1560x680.jpg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 1px, 1560px 680px, 634px 610px, 1560px 680px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
+  background-position: center 18px, center 38px, 790px 1231px, center 1992px, 0 1049px, 179px 2840px, 1176px 3228px, 1445px 2697px;
+}
+
+.history__title {
+  padding: 734px 718px 0 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 67px;
+}
+
+.history__text {
+  font-size: 16px;
+  line-height: 19px;
+
+  &:nth-child(2) {
+    margin: -16px 0 0 0;
+    padding: 0 0 0 793px;
+  }
+
+  &:nth-child(3) {
+    margin: 20px 0 0 0;
+    padding: 0 0 0 793px;
+  }
+
+  &:nth-child(4) {
+    margin: 150px 0 0 0;
+    padding: 0 797px 0 0;
+  }
+
+  &:nth-child(5) {
+    margin: 19px 0 0 0;
+    padding: 0 818px 0 0;
+  }
+
+  &:nth-child(6) {
+    margin: 1268px 0 0 0;
+    padding: 0 535px 0;
+  }
+
+  &:nth-child(7) {
+    margin: 18px 0 0 0;
+    padding: 0 535px 0;
+  }
+
+  &:nth-child(8) {
+    margin: 22px 0 0 0;
+    padding: 0 535px 0;
+  }
+}
