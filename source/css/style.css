@@ -191,7 +191,6 @@ img {
 }
 
 .wrapper {
-  box-shadow: 10px 0 19px -17px #000000, -10px 0 19px -17px #000000;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -237,6 +236,16 @@ ul, li {
   height: 50px;
 }
 
+.header__img {
+  transition: all 0.5s ease;
+}
+.header__img:hover {
+  fill: #5b8ccb;
+}
+.header__img:active {
+  fill: #cecece;
+}
+
 .main-nav__list {
   display: flex;
   margin: 0;
@@ -248,9 +257,47 @@ ul, li {
   padding: 0 0 6px 0;
   font-size: 19px;
   line-height: 21px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: all 0.9s ease;
+  color: #000000;
+  position: relative;
+  display: inline-block;
 }
 .main-nav__item:hover {
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%) bottom/100% 1px no-repeat;
+  border-bottom: 2px solid #5b8ccb;
+  color: #5b8ccb;
+}
+.main-nav__item:active {
+  border-bottom: 2px solid #cecece;
+  color: #cecece;
+}
+
+.main-nav__droplist {
+  display: none;
+}
+
+.main-nav__item--drop {
+  position: relative;
+  z-index: 1;
+}
+
+.main-nav__item--drop:hover .main-nav__droplist {
+  border-top: 15px solid rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.main-nav__item--drop .main-nav__droplink {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: rgba(100, 100, 100, 0.3);
+  min-width: 250px;
+}
+.main-nav__item--drop .main-nav__droplink:hover {
+  background-color: #fdfdfd;
 }
 
 .hero {
@@ -436,36 +483,5 @@ ul, li {
 }
 .footer__link:hover {
   color: orange;
-}
-
-.footer__organization-info,
-.footer__organization-inn,
-.footer__organization-kpp,
-.footer__organization-ogrn,
-.footer__organization-bank-order,
-.footer__organization-ks,
-.footer__organization-bik,
-.footer__organization-bank-inn,
-.footer__organization-bank-ogrn {
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 10px 0 0;
-}
-.footer__organization-info:hover,
-.footer__organization-inn:hover,
-.footer__organization-kpp:hover,
-.footer__organization-ogrn:hover,
-.footer__organization-bank-order:hover,
-.footer__organization-ks:hover,
-.footer__organization-bik:hover,
-.footer__organization-bank-inn:hover,
-.footer__organization-bank-ogrn:hover {
-  color: orange;
-  cursor: copy;
-}
-
-.footer__list-item:nth-child(2) {
-  display: flex;
-  flex-wrap: wrap;
 }
 /*# sourceMappingURL=style.css.map */

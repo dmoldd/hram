@@ -74,25 +74,25 @@
   }
 }
 
-.footer__organization-info,
-.footer__organization-inn,
-.footer__organization-kpp,
-.footer__organization-ogrn,
-.footer__organization-bank-order,
-.footer__organization-ks,
-.footer__organization-bik,
-.footer__organization-bank-inn,
-.footer__organization-bank-ogrn {
-  width: fit-content;
-  margin: 0 10px 0 0;
-  &:hover {
-    color: orange;
-    cursor: copy;
-  }
-}
+// .footer__organization-info,
+// .footer__organization-inn,
+// .footer__organization-kpp,
+// .footer__organization-ogrn,
+// .footer__organization-bank-order,
+// .footer__organization-ks,
+// .footer__organization-bik,
+// .footer__organization-bank-inn,
+// .footer__organization-bank-ogrn {
+//   width: fit-content;
+//   margin: 0 10px 0 0;
+//   &:hover {
+//     color: orange;
+//     cursor: copy;
+//   }
+// }
 
 
 .footer__list-item:nth-child(2) {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 }
