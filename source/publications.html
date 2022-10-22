@@ -50,60 +50,19 @@
     <main class="maincontent">
       <section class="publications">
         <div class="container">
-          <div class="crumbs">
-            <a href="index.html">Главная &#8594</a>
-            <a href="index.html">Публикации</a>
-          </div>
-          <div class="publications__previews">
-            <article class="publications__prewiew">
-              <a class="publications__title" href="#">Семья в православной традиции</a>
-              <a href="#" class="publications__read-link">
-                Читать
-                <svg class="publications__read-row" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="publications__row" d="M0.999999 9L17 9" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path class="publications__row" d="M9 1L17 9L9 17" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-              <div class="publications__prewiew-inner">
-                <a class="publications__img" href="#"><img src="img/publications/family.jpg" alt="Семья"></a>
-                <p class="publications__date">1 апреля 2022 | #Традиции #Семья	</p>
-                <p class="publications__desc">Для того, чтобы понять глубокий смысл слова «церковь», стоит взглянуть на семью.</p>
+          <h1 class="publications__title">Публикации</h1>
+          <ul class="puslications__list">
+            <li class="publications__item">
+              <button class="publications__accordion">Семья в православной традиции</button>
+              <div class="publications__item-inner">
+                <p>bla bla bla</p>
               </div>
-            </article>
-            <article class="publications__prewiew">
-              <h3 class="publications__title"><a href="#">Таинство покаяния</a></h3>
-              <a href="#" class="publications__read-link">
-                Читать
-                <svg class="publications__read-row" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.999999 9L17 9" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M9 1L17 9L9 17" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-              <div class="publications__prewiew-inner">
-                <a class="publications__img" href="#"><img src="img/publications/metanoia.jpg" alt="Покаяние"></a>
-                <p class="publications__date"> 25 марта 2022 | #Традиции #Таинства</p>
-                <p class="publications__desc">Пока земная жизнь не закончилась, у человека всегда есть возможность начать жизнь с чистого листа.</p>
-              </div>
-            </article>
-            <!-- <article class="publications__prewiew">
-              <a class="publications__img" href="#"><img src="img/publications/pray.jpg" alt="Молитвы"></a>
-              <h3 class="publications__title"><a href="#">Утренние и вечерние молитвы</a></h3>
-              <p class="publications__date">4 ноября 2021 | #Традиции #Молитва</p>
-              <p class="publications__desc">С молитвы начинается и молитвой заканчивается каждый день христианина. Как правильно молиться?</p>
-            </article>
-            <article class="publications__prewiew">
-              <a class="publications__img" href="#"><img  src="img/publications/fingers.jpg" alt=""></a>
-              <h3 class="publications__title"><a href="#">Крестное знамение</a></h3>
-              <p class="publications__date"> 23 августа 2021 | #Традиции #Жизнь христианина	</p>
-              <p class="publications__desc">Двуперстие — первый образ, который возникнет в представлении современного человека при слове «старообрядчество».</p>
-            </article>
-            <article class="publications__prewiew">
-              <a class="publications__img" href="#"><img src="img/publications/old-believer.jpg" alt=""></a>
-              <h3 class="publications__title"><a href="#">Старообрядцы в сегодняшнем мире</a></h3>
-              <p class="publications__date"> 22 августа 2021 | #Традиции #Жизнь христианина	</p>
-              <p class="publications__desc">Православный старообрядец — это человек свободный. Свободный, в первую очередь, от навязанных стереотипов современного мира и способный управлять своими страстями. </p>
-            </article> -->
-          </div>
+            </li>
+            <li class="publications__item">
+              <button class="publications__accordion">Семья в православной традиции</button>
+              <div class="publications__item-inner"></div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -150,8 +109,7 @@
       </div>
     </footer>
   </div>
-  <!-- <script src="js/clipboard.min.js"> -->
-  <!-- // <script>new Clipboard('.btn-clipboard');</script> -->
-  <!-- </script> -->
+  <script src="js/accordion.js">
+  </script>
 </body>
 </html>

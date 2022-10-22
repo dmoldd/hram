@@ -2,113 +2,52 @@
 
 }
 
-.publications .container {
-  display: flex;
-  flex-wrap: wrap;
-}
+.container {
 
-.crumbs {
-  width: 100%;
-  margin: 20px 0 20px 0;
-
-  a {
-    margin: 0 10px 0 0;
-    font-size: 19px;
-    line-height: 21px;
-  }
-}
-
-.publications__previews {
-  width: 100%;
-
-}
-
-.publications__prewiew {
-  padding: 10px;
-  background: $line no-repeat center top / 100% 1px;
-  position: relative;
-
-  &:first-child {
-    background: $line no-repeat center 1px / 100% 1px;
-  }
-
-  &:hover {
-    background-color: $sky;
-    transition: all 1.5s ease;
-
-    .publications__prewiew-inner {
-      margin: 20px 0 0 0;
-      display: grid;
-      grid-template-columns: 240px 1fr;
-      grid-template-rows: 40px minmax(200px, 100%);
-      grid-template-areas: "A B" "A C";
-      grid-column-gap: 40px;
-    }
-
-    .publications__img {
-      grid-area: A;
-      overflow: hidden;
-
-      img:hover {
-        transition: transform 1.5s ease;
-        transform: scale(1.2);
-      }
-    }
-
-    .publications__title {
-      color: $white;
-    }
-
-    .publications__date {
-      grid-area: B;
-      color: $white2;
-      font-size: 20px;
-    }
-
-    .publications__desc {
-      grid-area: C;
-      color: $white;
-      font-size: 25px;
-    }
-  }
 }
 
 .publications__title {
-  margin: 0;
-  font-weight: 400;
+
+}
+
+.puslications__list {
+
+}
+
+.publications__item {
+  background: $line no-repeat center 1px / 1560px 2px;
+  padding: 3px 0 0 0;
+}
+
+.publications__accordion {
+  padding: 10px;
+  // margin: 10px;
+  width: 100%;
+  border: none;
+  background-color: $white;
+  text-align: left;
   font-size: 36px;
   line-height: 42px;
+  cursor: pointer;
 }
 
-.publications__read-link {
-  position: absolute;
-  top: 15px;
-  right: 47px;
-  font-size: 18px;
-  line-height: 21px;
-  transition: all 0.5s;
+.publications__accordion:hover {
 
-  &:hover {
-    color: $white;
-    transition: all 0.5s;
-
-    .publications__row {
-      stroke: $white;
-      transition: stroke 0.5s;
-    }
-  }
 }
 
-.publications__read-row {
-  transform: translateY(3px) translateX(7px);
+button.publications__accordion::after {
+  content: "+";
+  text-align: right;
 }
 
-.publications__prewiew-inner {
-  display: none;
+.publications__accordion.is-opened::after {
+  content: "-"
 }
 
-
-
-
+.publications__item-inner {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
 
 

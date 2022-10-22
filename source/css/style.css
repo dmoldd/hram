@@ -423,97 +423,35 @@ ul, li {
   padding: 0 535px 0;
 }
 
-.publications .container {
-  display: flex;
-  flex-wrap: wrap;
+.publications__item {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%) no-repeat center 1px/1560px 2px;
+  padding: 3px 0 0 0;
 }
 
-.crumbs {
-  width: 100%;
-  margin: 20px 0 20px 0;
-}
-.crumbs a {
-  margin: 0 10px 0 0;
-  font-size: 19px;
-  line-height: 21px;
-}
-
-.publications__previews {
-  width: 100%;
-}
-
-.publications__prewiew {
+.publications__accordion {
   padding: 10px;
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%) no-repeat center top/100% 1px;
-  position: relative;
-}
-.publications__prewiew:first-child {
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%) no-repeat center 1px/100% 1px;
-}
-.publications__prewiew:hover {
-  background-color: #5b8ccb;
-  transition: all 1.5s ease;
-}
-.publications__prewiew:hover .publications__prewiew-inner {
-  margin: 20px 0 0 0;
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  grid-template-rows: 40px minmax(200px, 100%);
-  grid-template-areas: "A B" "A C";
-  grid-column-gap: 40px;
-}
-.publications__prewiew:hover .publications__img {
-  grid-area: A;
-  overflow: hidden;
-}
-.publications__prewiew:hover .publications__img img:hover {
-  transition: transform 1.5s ease;
-  transform: scale(1.2);
-}
-.publications__prewiew:hover .publications__title {
-  color: #fff;
-}
-.publications__prewiew:hover .publications__date {
-  grid-area: B;
-  color: #cecece;
-  font-size: 20px;
-}
-.publications__prewiew:hover .publications__desc {
-  grid-area: C;
-  color: #fff;
-  font-size: 25px;
-}
-
-.publications__title {
-  margin: 0;
-  font-weight: 400;
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  text-align: left;
   font-size: 36px;
   line-height: 42px;
+  cursor: pointer;
 }
 
-.publications__read-link {
-  position: absolute;
-  top: 15px;
-  right: 47px;
-  font-size: 18px;
-  line-height: 21px;
-  transition: all 0.5s;
-}
-.publications__read-link:hover {
-  color: #fff;
-  transition: all 0.5s;
-}
-.publications__read-link:hover .publications__row {
-  stroke: #fff;
-  transition: stroke 0.5s;
+button.publications__accordion::after {
+  content: "+";
+  text-align: right;
 }
 
-.publications__read-row {
-  transform: translateY(3px) translateX(7px);
+.publications__accordion.is-opened::after {
+  content: "-";
 }
 
-.publications__prewiew-inner {
-  display: none;
+.publications__item-inner {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
 }
 
 .footer .container {
