@@ -24,6 +24,10 @@
     border-bottom: 2px solid $white2;
     color: $white2;
   }
+
+  &--current {
+    font-weight: 700;
+  }
 }
 
 .main-nav__droplist {
@@ -45,6 +49,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
+    font-weight: 400;
   }
 
 }

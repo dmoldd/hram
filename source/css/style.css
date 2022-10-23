@@ -271,6 +271,9 @@ ul, li {
   border-bottom: 2px solid #cecece;
   color: #cecece;
 }
+.main-nav__item--current {
+  font-weight: 700;
+}
 
 .main-nav__droplist {
   display: none;
@@ -291,6 +294,7 @@ ul, li {
   display: flex;
   flex-direction: column;
   position: absolute;
+  font-weight: 400;
 }
 
 .main-nav__item--drop .main-nav__droplink {
@@ -423,9 +427,24 @@ ul, li {
   padding: 0 535px 0;
 }
 
+.publications .container {
+  background: url(../img/hero/hero-rect.svg), url(../img/hero/hero-rect.svg);
+  background-position: 665px 18px, 1272px 49px;
+  background-repeat: no-repeat;
+}
+
+.publications__title {
+  font-size: 64px;
+  line-height: 75px;
+  margin: 0;
+}
+
 .publications__item {
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%) no-repeat center 1px/1560px 2px;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%) no-repeat center 0/1560px 2px;
   padding: 3px 0 0 0;
+}
+.publications__item:first-child {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%) no-repeat center 1px/1560px 2px;
 }
 
 .publications__accordion {
@@ -437,11 +456,22 @@ ul, li {
   font-size: 36px;
   line-height: 42px;
   cursor: pointer;
+  position: relative;
+}
+
+.is-opened {
+  background-color: #5b8ccb;
+}
+
+.publications__accordion:hover {
+  background-color: #5b8ccb;
+  transition: background-color 0.2s ease-in-out;
 }
 
 button.publications__accordion::after {
   content: "+";
-  text-align: right;
+  position: absolute;
+  right: 20px;
 }
 
 .publications__accordion.is-opened::after {
@@ -449,9 +479,46 @@ button.publications__accordion::after {
 }
 
 .publications__item-inner {
+  padding: 0 0 0 50px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  grid-template-rows: 40px minmax(190px, 100%) 50px;
+  grid-template-areas: "A B" "A C" "A D";
+  grid-column-gap: 30px;
+  background-color: #5b8ccb;
+}
+
+.publications__item-img {
+  padding: 10px 0 0 0;
+  grid-area: A;
+}
+
+.publications__item-date {
+  grid-area: B;
+  margin: 15px 0 0 0;
+  font-size: 20px;
+  color: #cecece;
+}
+
+.publications__item-desc {
+  grid-area: C;
+  color: #fff;
+  font-size: 25px;
+}
+
+.publications__item-link {
+  grid-area: D;
+  font-size: 25px;
+  line-height: 21px;
+  color: #fff;
+  transition: color 0.4s ease-in-out;
+}
+.publications__item-link:hover {
+  color: #cecece;
+  transition: color 0.4s ease-in-out;
 }
 
 .footer .container {

@@ -1,13 +1,14 @@
-.publications {
-
+.publications .container {
+  background: url(../img/hero/hero-rect.svg), url(../img/hero/hero-rect.svg);
+  background-position: 665px 18px, 1272px 49px;
+  background-repeat: no-repeat;
 }
 
-.container {
-
-}
 
 .publications__title {
-
+  font-size: 64px;
+  line-height: 75px;
+  margin: 0;
 }
 
 .puslications__list {
@@ -15,8 +16,12 @@
 }
 
 .publications__item {
-  background: $line no-repeat center 1px / 1560px 2px;
+  background: $line no-repeat center 0 / 1560px 2px;
   padding: 3px 0 0 0;
+
+  &:first-child {
+    background: $line no-repeat center 1px / 1560px 2px;
+  }
 }
 
 .publications__accordion {
@@ -29,15 +34,22 @@
   font-size: 36px;
   line-height: 42px;
   cursor: pointer;
+  position: relative;
+}
+
+.is-opened {
+  background-color: $sky;
 }
 
 .publications__accordion:hover {
-
+  background-color: $sky;
+  transition: background-color 0.2s ease-in-out;
 }
 
 button.publications__accordion::after {
   content: "+";
-  text-align: right;
+  position: absolute;
+  right: 20px;
 }
 
 .publications__accordion.is-opened::after {
@@ -45,9 +57,46 @@ button.publications__accordion::after {
 }
 
 .publications__item-inner {
+  padding: 0 0 0 50px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  grid-template-rows: 40px minmax(190px, 100%) 50px;
+  grid-template-areas: "A B" "A C" "A D";
+  grid-column-gap: 30px;
+  background-color: $sky;
 }
 
+.publications__item-img {
+  padding: 10px 0 0 0;
+  grid-area: A;
+}
+
+.publications__item-date {
+  grid-area: B;
+  margin: 15px 0 0 0;
+  font-size: 20px;
+  color: $white2;
+}
+
+.publications__item-desc {
+  grid-area: C;
+  color: $white;
+  font-size: 25px;
+}
+
+.publications__item-link {
+  grid-area: D;
+  font-size: 25px;
+  line-height: 21px;
+  color:$white;
+  transition: color 0.4s ease-in-out;
+
+  &:hover {
+    color: $white2;
+    transition: color 0.4s ease-in-out;
+  }
+}
 
