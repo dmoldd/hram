@@ -521,6 +521,41 @@ button.publications__accordion::after {
   transition: color 0.4s ease-in-out;
 }
 
+.about-family .container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
+  background-repeat: no-repeat;
+  background-position: 148px 168px, 1500px 457px, 1457px 1862px, 1550px 2562px, 1422px 3662px, 54px 1233px, 154px 3233px, 54px 4233px, 154px 5233px, 1457px 5862px, 1557px 4862px;
+}
+
+.about-family__title {
+  margin: 20px 0 0 0;
+  font-size: 64px;
+  line-height: 75px;
+}
+
+.about-family__text {
+  font-size: 20px;
+  padding: 0 200px;
+}
+.about-family__text:nth-child(13) {
+  padding: 0 200px 0 857px;
+}
+.about-family__text:nth-child(14) {
+  padding: 0 200px 0 857px;
+}
+.about-family__img {
+  padding: 0 200px;
+}
+.about-family__img2 {
+  align-self: flex-start;
+  position: absolute;
+  top: 2835px;
+  left: 222px;
+}
+
 .footer .container {
   position: relative;
 }
