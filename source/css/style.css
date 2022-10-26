@@ -224,6 +224,30 @@ ul, li {
   padding: 0;
 }
 
+.will-be {
+  margin: 20px 0 20px 0;
+}
+
+.will-be .container {
+  min-height: 300px;
+  position: relative;
+  border: 4px dashed #5b8ccb;
+}
+
+.will-be-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #5b8ccb;
+}
+
+.header {
+  min-height: 85px;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%) no-repeat center bottom/1560px 2px;
+}
+
 .header .container {
   position: relative;
 }
@@ -272,7 +296,8 @@ ul, li {
   color: #cecece;
 }
 .main-nav__item--current {
-  font-weight: 700;
+  border-bottom: 2px solid #5b8ccb;
+  color: #5b8ccb;
 }
 
 .main-nav__droplist {
@@ -381,10 +406,10 @@ ul, li {
 
 .history__article {
   min-height: 3500px;
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%), url("../img/history/history-main1560x680.jpg"), url("../img/history/history1-634x610.jpg"), url("../img/history/history2-1560x680.jpg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
+  background: url("../img/history/history-main1560x680.jpg"), url("../img/history/history1-634x610.jpg"), url("../img/history/history2-1560x680.jpg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
   background-repeat: no-repeat;
-  background-size: 100% 1px, 1560px 680px, 634px 610px, 1560px 680px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
-  background-position: center 18px, center 38px, 790px 1231px, center 1992px, 0 1049px, 179px 2840px, 1176px 3228px, 1445px 2697px;
+  background-size: 1560px 680px, 634px 610px, 1560px 680px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
+  background-position: center 38px, 790px 1231px, center 1992px, 0 1049px, 179px 2840px, 1176px 3228px, 1445px 2697px;
 }
 
 .history__title {
@@ -440,11 +465,7 @@ ul, li {
 }
 
 .publications__item {
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%) no-repeat center 0/1560px 2px;
-  padding: 3px 0 0 0;
-}
-.publications__item:first-child {
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%) no-repeat center 1px/1560px 2px;
+  border-top: 1px solid #000000;
 }
 
 .publications__accordion {
