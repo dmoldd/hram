@@ -1,6 +1,10 @@
+.map {
+  padding: 0 0 20px 0;
+}
+
 .map .container {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 25% 75%;
   grid-template-rows: 150px 700px;
   grid-template-areas: "A A" "B C";
 }
@@ -11,41 +15,4 @@
 
 .map__iframe {
   grid-area: C;
-}
-
-.tabs {
-  grid-area: B;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 20% 80%;
-  grid-template-areas: "A" "B";
-}
-
-.tabs__items {
-  grid-area: A;
-  display: flex;
-}
-
-.tabs__items>.tabs__item>input[type="radio"] {
-  display: none;
-}
-
-.tabs__item {
-  width: 33.3%;
-}
-
-.fa-car {
-
-}
-
-.tabs__body {
-  grid-area: B;
-}
-
-.tabs__block {
-  display: none;
-
-  &:target {
-    display: block;
-  }
 }

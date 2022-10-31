@@ -15,7 +15,7 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item main-nav__item--drop  main-nav__item--current">
+            <li class="main-nav__item main-nav__item--drop">
               <a href="publications.html">Публикации &#9662</a>
               <div class="main-nav__droplist">
                 <a class="main-nav__droplink" href="publ-history.html">История старообрядчества</a>
@@ -27,17 +27,8 @@
                 <a class="main-nav__droplink" href="publ-clothes.html">Одежда христианина в современном мире</a>
               </div>
             </li>
-            <li class="main-nav__item main-nav__item--drop">
-              <a href="#">Видео &#9662</a>
-              <div class="main-nav__droplist">
-                <a class="main-nav__droplink" href="video-film.html">Документальный фильм "Староверы юга России"</a>
-                <a class="main-nav__droplink" href="https://www.youtube.com/channel/UCJojXP_D3P84aKbOaW7MJmQ">Наш Youtube-канал "Староверы-онлайн"</a>
-                <a class="main-nav__droplink" href="video-avvakum.html">Конкурс семейного рисунка "По следам Аввакума"</a>
-                <a class="main-nav__droplink" href="video-build-church.html">Староверы села Успех строят свой храм</a>
-                <a class="main-nav__droplink" href="video-avvakum-resonality.html">Выставка "Протопоп Аввакум. Личность и эпоха"</a>
-                <a class="main-nav__droplink" href="video-Christmas.html">Сочи. Рождество</a>
-                <a class="main-nav__droplink" href="video-Christmas2.html">Сочи. Рождество. Часть 2</a>
-              </div>
+            <li class="main-nav__item">
+              <a href="video.html">Видео</a>
             </li>
             <li class="main-nav__item main-nav__item--drop">
               <a href="#">Галерея &#9662</a>
@@ -69,74 +60,59 @@
       </div>
     </header>
     <main class="maincontent">
-      <section class="publications">
+      <section class="video">
         <div class="container">
-          <h1 class="publications__title">Публикации</h1>
-          <ul class="puslications__list">
-            <li class="publications__item">
-              <button class="publications__accordion">История старообрядчества</button>
-              <div class="publications__item-inner">
-                <img class="publications__item-img" src="img/publications/history.jpg" alt="История старообрядчества">
-                <p class="publications__item-date">20.08.2022 | #История #Традиции</p>
-                <p class="publications__item-desc">Историю старообрядчества несправедливо начинают с церковной реформы XVII века. Мы в корне не согласимся с этим. </p>
-                <a class="publications__item-link" href="history.html">Читать  <i class="fa-solid fa-arrow-right-long"></i></a>
+          <h1 class="video__title">Видео</h1>
+          <div class="video__doc-film">
+            <h2 class="video__doc-film-title">Документальный фильм "Староверы юга России"</h2>
+            <div class="video__iframe"><iframe src="https://www.youtube.com/embed/y4Psizo1DsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <p class="video__doc-film-desc">Сегодня большая часть населения России ощущает потребность в сохранении, укреплении традиционных духовных и семейных ценностей. Чтобы осознать свое настоящее и правильно выстраивать будущее очень важно помнить свою историю - историю своего края, своего народа и духовно-нравственные корни. Все это должны быть в основе уклада жизни русского человека, укреплять и развивать традиционную систему ценностей. Эти ориентиры помогают бороться с проблемами, которые  наносят удар по обществу, особенно по молодежи. </p>
+          </div>
+          <div class="video__others">
+            <a class="video__link-channel" href="https://www.youtube.com/channel/UCJojXP_D3P84aKbOaW7MJmQ/featured">Наш Youtube-канал "Староверы-онлайн"</a>
+            <div class="video__others-item">
+              <button class="video__button">Конкурс семейного рисунка "По следам Аввакума"</button>
+              <div class="video__inner">
+                <div class="video__iframe">
+                  <iframe src="https://www.youtube.com/embed/kKWsz5bAeWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
               </div>
-            </li>
-            <li class="publications__item">
-              <button class="publications__accordion">Семья в старообрядческой традиции</button>
-              <div class="publications__item-inner">
-                <img class="publications__item-img" src="img/publications/family.jpg" alt="История старообрядчества">
-                <p class="publications__item-date"> 1 апреля 2022 | Кирилл Михайлов | #Традиции #Семья	</p>
-                <p class="publications__item-desc">Для того, чтобы понять глубокий смысл слова «церковь», стоит взглянуть на семью. </p>
-                <a class="publications__item-link" href="about-family.html">Читать  <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+            <div class="video__others-item">
+              <button class="video__button">Староверы села Успех строят свой храм</button>
+              <div class="video__inner">
+                <div class="video__iframe">
+                  <iframe src="https://www.youtube.com/embed/25yRmHPlXBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
               </div>
-            </li>
-            <li class="publications__item">
-              <button class="publications__accordion">Одежда христианина</button>
-              <div class="publications__item-inner">
-                <img class="publications__item-img" src="img/publications/clothes.jpg" alt="История старообрядчества">
-                <p class="publications__item-date"> 22 августа 2021 | #Традиции #В старообрядческом храме	</p>
-                <p class="publications__item-desc">В повседневной жизни христианин мало чем отличается от среднестатистического человека. Иное дело — богослужение.</p>
-                <a class="publications__item-link" href="clothes.html">Читать  <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+            <div class="video__others-item">
+              <button class="video__button">Выставка "Протопоп Аввакум. Личность и эпоха"</button>
+              <div class="video__inner">
+                <div class="video__iframe">
+                  <iframe src="https://www.youtube.com/embed/UT44NgJhNqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video__iframe">
+                  <iframe src="https://www.youtube.com/embed/9YHFsb5M8ps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
               </div>
-            </li>
-            <li class="publications__item">
-              <button class="publications__accordion">Таинство покаяния</button>
-              <div class="publications__item-inner">
-                <img class="publications__item-img" src="img/publications/metanoia.jpg" alt="История старообрядчества">
-                <p class="publications__item-date"> 25 марта 2022 | #Традиции #Таинства	</p>
-                <p class="publications__item-desc">Пока земная жизнь не закончилась, у человека всегда есть возможность начать жизнь с чистого листа.</p>
-                <a class="publications__item-link" href="metanoia.html">Читать  <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+            <div class="video__others-item">
+              <button class="video__button">Сочи. Рождество</button>
+              <div class="video__inner">
+                <div class="video__iframe">
+                  <iframe src="https://www.youtube.com/embed/t7hVRxONwKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
               </div>
-            </li>
-            <li class="publications__item">
-              <button class="publications__accordion">Утренние и вечерние молитвы</button>
-              <div class="publications__item-inner">
-                <img class="publications__item-img" src="img/publications/pray.jpg" alt="История старообрядчества">
-                <p class="publications__item-date"> 4 ноября 2021 | #Традиции #Молитва	</p>
-                <p class="publications__item-desc">Молитвой начинается и заканчивается каждый день христианина. Как правильно молиться?</p>
-                <a class="publications__item-link" href="pray.html">Читать  <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+            <div class="video__others-item">
+              <button class="video__button">Сочи. Рождество. Часть 2</button>
+              <div class="video__inner">
+                <div class="video__iframe">
+                  <iframe src="https://www.youtube.com/embed/p_D2T7py3Cc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
               </div>
-            </li>
-            <li class="publications__item">
-              <button class="publications__accordion">Крестное знамение</button>
-              <div class="publications__item-inner">
-                <img class="publications__item-img" src="img/publications/fingers.jpg" alt="История старообрядчества">
-                <p class="publications__item-date"> 23 августа 2021 | #Традиции #Жизнь христианина	</p>
-                <p class="publications__item-desc">Двуперстие — первый образ, который возникнет в представлении современного человека при слове «старообрядчество».</p>
-                <a class="publications__item-link" href="cross.html">Читать  <i class="fa-solid fa-arrow-right-long"></i></a>
-              </div>
-            </li>
-            <li class="publications__item">
-              <button class="publications__accordion">Старообрядец в сегодняшнем мире</button>
-              <div class="publications__item-inner">
-                <img class="publications__item-img" src="img/publications/old-believer.jpg" alt="История старообрядчества">
-                <p class="publications__item-date"> 22 августа 2021 | #Традиции #Жизнь христианина	</p>
-                <p class="publications__item-desc">Православный старообрядец — это человек свободный. Свободный, в первую очередь, от навязанных стереотипов современного мира и способный управлять своими страстями. </p>
-                <a class="publications__item-link" href="history.html">Читать  <i class="fa-solid fa-arrow-right-long"></i></a>
-              </div>
-            </li>
-          </ul>
+          </div>
         </div>
       </section>
     </main>
@@ -182,7 +158,7 @@
       </div>
     </footer>
   </div>
-  <script src="js/accordion.js"></script>
   <script src="https://kit.fontawesome.com/e5b88955d2.js" crossorigin="anonymous"></script>
+  <script src="js/video-accordion.js"></script>
 </body>
 </html>

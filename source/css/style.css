@@ -577,9 +577,115 @@ button.publications__accordion::after {
   left: 222px;
 }
 
+.video .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.video__title {
+  font-weight: 400;
+  font-size: 64px;
+  margin: 0;
+}
+
+.video__doc-film {
+  display: flex;
+  flex-direction: column;
+}
+
+.video__doc-film-title {
+  font-weight: 400;
+  text-align: center;
+}
+
+.video__iframe {
+  width: 100%;
+  max-width: 960px;
+  height: 720px;
+  align-self: center;
+}
+.video__iframe iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.video__doc-film-desc {
+  width: 100%;
+  max-width: 960px;
+  align-self: center;
+  font-size: 25px;
+}
+
+.video__others-item {
+  border-top: 1px solid #000000;
+}
+
+.video__button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  text-align: left;
+  font-size: 36px;
+  line-height: 42px;
+  cursor: pointer;
+  position: relative;
+}
+.video__button:hover {
+  background-color: #5b8ccb;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button.video__button::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+}
+
+button.video__button.is-opened::after {
+  content: "-";
+}
+
+.video__inner {
+  padding: 0 0 0 50px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+  background-color: #5b8ccb;
+}
+.video__inner .video__iframe {
+  margin: 0 auto 10px;
+}
+
+.video__link-channel {
+  display: block;
+  background-color: #5b8ccb;
+  border-top: 1px solid #000000;
+  padding: 10px;
+  width: 100%;
+  background-color: #fff;
+  text-align: left;
+  font-size: 36px;
+  line-height: 42px;
+  cursor: pointer;
+  position: relative;
+}
+.video__link-channel:hover {
+  background-color: #5b8ccb;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.is-opened {
+  background-color: #5b8ccb;
+}
+
+.map {
+  padding: 0 0 20px 0;
+}
+
 .map .container {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 25% 75%;
   grid-template-rows: 150px 700px;
   grid-template-areas: "A A" "B C";
 }
@@ -590,38 +696,6 @@ button.publications__accordion::after {
 
 .map__iframe {
   grid-area: C;
-}
-
-.tabs {
-  grid-area: B;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 20% 80%;
-  grid-template-areas: "A" "B";
-}
-
-.tabs__items {
-  grid-area: A;
-  display: flex;
-}
-
-.tabs__items > .tabs__item > input[type=radio] {
-  display: none;
-}
-
-.tabs__item {
-  width: 33.3%;
-}
-
-.tabs__body {
-  grid-area: B;
-}
-
-.tabs__block {
-  display: none;
-}
-.tabs__block:target {
-  display: block;
 }
 
 .footer .container {
