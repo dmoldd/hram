@@ -15,6 +15,9 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item">
+              <a href="video.html">Видео</a>
+            </li>
             <li class="main-nav__item main-nav__item--drop">
               <a href="publications.html">Публикации &#9662</a>
               <div class="main-nav__droplist">
@@ -26,9 +29,6 @@
                 <a class="main-nav__droplink" href="publ-old-believer.html">Старообрядец в сегодняшнем мире</a>
                 <a class="main-nav__droplink" href="publ-clothes.html">Одежда христианина в современном мире</a>
               </div>
-            </li>
-            <li class="main-nav__item">
-              <a href="video.html">Видео</a>
             </li>
             <li class="main-nav__item main-nav__item--drop">
               <a href="#">Галерея &#9662</a>
@@ -70,7 +70,7 @@
             <p class="hero__priest-text">По всем вопросам <br> обращаться <br> по телефону:</p>
             <a class="hero__priest-phone" href="tel:+79284234767">+7 (928) 423-47-67</a>
           </article>
-          <ul class="hero__list">
+          <!-- <ul class="hero__list">
             <li class="hero__list-item">
               <h2 class="hero__list-item-title">Режим работы:<span class="hero__text"> Вт-Пт: 9:00 - 17:00</span></h2>
               <h2 class="hero__list-item-title">Богослужения:<span class="hero__text"> Сб с 16:00, Вс с 7:00</span></h2>
@@ -86,14 +86,47 @@
             <li class="hero__list-item">
               <h2 class="hero__list-item-title">Контакты:</h2>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </section>
-      <section class="will-be">
+      <section class="priest">
         <div class="container">
-          <span class="will-be-text">
-            Здесь будет информация о священниках
-          </span>
+          <h2 class="priest__title">Духовенство</h2>
+          <ul class="priest__info">
+            <li class="priest__info-title">иерей Артемий Ефимов</li>
+            <li class="priest__desc">
+              Является настоятелем храма Успения Пресвятой Богородицы села "Некрасовское" города Сочи Краснодарского Края.
+
+            </li>
+            <li class="priest__desc">
+              Воспитан в старообрядческой семье, принадлежащей к династии старообрядческого духовенства.
+            </li>
+            <li class="priest__desc">
+              Имеет высшее образование: закончил Курскую Сельскохозяйственную Академию, получив профессию агронома.
+            </li>
+            <li class="priest__desc">
+              Деятельность отца Артемия не ограничивается приходским попечением
+              и окормлением общины. Помимо послушания церковного настоятеля, отец Артемий является одним из создателей и администраторов Фонда поддержки
+              Православных Общин Юга России.
+            </li>
+            <li class="priest__desc">
+              Отцом Артемием регулярно совершаются службы в недавно отстроенном храме общины. Приглашаем на богослужение всех
+              желающих.
+            </li>
+            <li class="priest__desc">
+              Пусть Господь Вас благословит!
+            </li>
+          </ul>
+          <div class="sim-slider">
+            <ul class="sim-slider-list">
+              <li><img src="http://pvbk.spb.ru/inc/slider/imgs/no-image.gif" alt="screen"></li>    <!-- это экран -->
+              <li class="sim-slider-element"><img src="img/priest/priest1.jpg" alt="2"></li>
+              <li class="sim-slider-element"><img src="img/priest/priest2.jpg" alt="N"></li>
+            </ul>
+            <div class="sim-slider-arrow-left"></div>
+            <div class="sim-slider-arrow-right"></div>
+            <div class="sim-slider-dots"></div>
+          </div>
         </div>
       </section>
       <section class="will-be">
@@ -162,6 +195,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/slider.js">new Sim()</script>
   <script src="https://kit.fontawesome.com/e5b88955d2.js" crossorigin="anonymous"></script>
 </body>
 </html>
