@@ -28,7 +28,7 @@ Sim.defaults = {
 	auto: true,     // Автоматическое пролистывание
 	interval: 5000, // Интервал между пролистыванием элементов (мс)
 	arrows: true,   // Пролистывание стрелками
-	dots: true      // Индикаторные точки
+	dots: false      // Индикаторные точки
 };
 
 Sim.prototype.elemPrev = function(num) {
