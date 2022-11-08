@@ -903,6 +903,75 @@ span.sim-dot {
   font-size: larger;
 }
 
+.pulications-main__title {
+  font-size: 64px;
+}
+
+.pulications-main__list {
+  display: flex;
+}
+
+.publications-main__list-item {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px 10px 0;
+  transition: all 0.5s;
+}
+.publications-main__list-item:first-child .publications-main__img img {
+  position: absolute;
+  bottom: 1px;
+  right: -133px;
+}
+.publications-main__list-item:nth-child(2) .publications-main__img img {
+  position: absolute;
+  bottom: 1px;
+  right: -66px;
+}
+.publications-main__list-item:last-child .publications-main__img img {
+  position: absolute;
+  bottom: 2px;
+  right: -89px;
+}
+.publications-main__list-item:hover {
+  background-color: #5b8ccb;
+}
+
+.publications-main__img {
+  overflow: hidden;
+  height: 480px;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.publications-main__img img {
+  width: 768px;
+  height: 576px;
+  display: block;
+  max-width: none;
+  max-height: none;
+}
+
+.publications-main__item-title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+
+.publications-main__link-read-more {
+  position: absolute;
+  bottom: 15px;
+  left: 36px;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+.publications-main__link-read-more:hover {
+  font-size: 25px;
+  color: #fff;
+}
+
 .footer .container {
   position: relative;
 }
