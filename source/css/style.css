@@ -682,41 +682,42 @@ button.video__button.is-opened::after {
 .priest .container {
   display: grid;
   grid-template-columns: 1fr 400px;
-  grid-template-rows: 150px 700px;
+  grid-template-rows: 150px 500px;
   grid-template-areas: "A A" "B C";
   grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  background: url("./../../img/hero/hero-rect.svg"), url("./../../img/hero/hero-rect.svg"), url("./../../img/hero/hero-rect.svg");
+  background-position: 329px 197px, 79px 402px, 339px 525px;
+  background-repeat: no-repeat;
 }
 
 .priest__title {
   grid-area: A;
   font-size: 64px;
   font-weight: 400;
+  text-align: left;
 }
 
 .priest__info {
-  margin: 0 50px 0 250px;
+  margin: 0 50px 0 425px;
   grid-area: B;
 }
 
 .priest__info-title {
-  text-align: right;
+  text-align: left;
   font-weight: 700;
   font-size: 30px;
-  border-left: 10px solid #FC7574;
   padding: 20px 0 20px 0;
+  font-size: 36px;
+  line-height: 42px;
 }
 
 .priest__desc {
-  text-align: right;
+  text-align: left;
   font-size: 25px;
-  border-left: 10px solid #FC7574;
   padding: 10px 0 10px 0;
-}
-.priest__desc:nth-child(even) {
-  background: #E1F1FF;
-}
-.priest__desc:nth-child(odd) {
-  background: #fff;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .sim-slider {
@@ -905,6 +906,8 @@ span.sim-dot {
 
 .pulications-main__title {
   font-size: 64px;
+  font-weight: 400;
+  text-align: left;
 }
 
 .pulications-main__list {
@@ -951,6 +954,11 @@ span.sim-dot {
   display: block;
   max-width: none;
   max-height: none;
+  transition: all 0.7s ease-in-out;
+}
+.publications-main__img img:hover {
+  height: 528px;
+  width: 704px;
 }
 
 .publications-main__item-title {

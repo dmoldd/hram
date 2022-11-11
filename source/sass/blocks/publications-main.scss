@@ -4,6 +4,8 @@
 
 .pulications-main__title {
   font-size: 64px;
+  font-weight: 400;
+  text-align: left;
 }
 
 .pulications-main__list {
@@ -62,6 +64,11 @@
     display: block;
     max-width: none;
     max-height: none;
+    transition: all 0.7s ease-in-out;
+    &:hover {
+      height: 480px * 1.1;
+      width: 640px * 1.1;
+    }
   }
 }
 
