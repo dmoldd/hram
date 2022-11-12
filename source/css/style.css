@@ -686,7 +686,7 @@ button.video__button.is-opened::after {
   grid-template-areas: "A A" "B C";
   grid-column-gap: 20px;
   grid-row-gap: 50px;
-  background: url("./../../img/hero/hero-rect.svg"), url("./../../img/hero/hero-rect.svg"), url("./../../img/hero/hero-rect.svg");
+  background: url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
   background-position: 329px 197px, 79px 402px, 339px 525px;
   background-repeat: no-repeat;
 }
@@ -987,7 +987,7 @@ span.sim-dot {
   display: flex;
   flex-wrap: wrap;
   gap: 50px 50px;
-  background: url("./../../img/hero/hero-rect.svg"), url("./../../img/hero/hero-rect.svg"), url("./../../img/hero/hero-rect.svg"), url("./../../img/hero/hero-rect.svg"), url("./../../img/hero/hero-rect.svg");
+  background: url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
   background-position: right 329px top 197px, right 79px top 402px, right 339px top 525px, right 637px top 684px;
   background-repeat: no-repeat;
 }
