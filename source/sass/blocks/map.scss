@@ -7,10 +7,13 @@
   grid-template-columns: 25% 75%;
   grid-template-rows: 150px 700px;
   grid-template-areas: "A A" "B C";
+  grid-row-gap: 50px;
 }
 
 .map__title {
   grid-area: A;
+  font-size: 64px;
+  font-weight: 400;
 }
 
 .map__iframe {
