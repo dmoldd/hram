@@ -1032,23 +1032,57 @@ span.sim-dot {
 .footer__list-item {
   padding: 20px;
   width: 33.3%;
-  border-left: 2px solid #fff;
-}
-
-.footer__list-item .main-nav .main-nav__list {
   display: flex;
   flex-direction: column;
-  padding: 0 0 0 0;
+}
+.footer__list-item:last-child .footer__list-item-title {
+  text-align: left;
+  padding: 0 0 0 50px;
 }
 
-.footer__list-item .main-nav .main-nav__item {
-  color: #fdfdfd;
+.footer__list-item-title {
+  text-align: right;
+  color: orange;
+  font-size: 29px;
+  font-weight: 700;
+}
+
+.footer__list-item-link {
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  font-size: 20px;
+  text-align: right;
+  padding: 10px 10px;
+}
+.footer__list-item-link:hover {
+  color: orange;
+}
+
+.footer__list-soc-networks {
+  padding: 0 10px 0 0;
+  font-size: 70px;
+  text-align: right;
+  color: #fff;
+}
+.footer__list-soc-networks a {
+  transition: all 0.5s ease-in-out;
+}
+.footer__list-soc-networks a:hover {
+  color: orange;
 }
 
 .footer__logo {
   position: absolute;
-  top: 13px;
-  right: 61px;
+  top: 20px;
+  right: 620px;
+}
+.footer__logo svg {
+  width: 300px;
+  height: auto;
+  fill: #fff;
+}
+.footer__logo svg:hover {
+  fill: rgb(107, 168, 238);
 }
 
 .footer__developed {
@@ -1084,6 +1118,33 @@ span.sim-dot {
   color: rgb(123, 107, 107);
 }
 .footer__link:hover {
+  color: orange;
+}
+
+.footer__organization-info,
+.footer__organization-inn,
+.footer__organization-kpp,
+.footer__organization-ogrn,
+.footer__organization-bank-order,
+.footer__organization-ks,
+.footer__organization-bik,
+.footer__organization-bank-inn,
+.footer__organization-bank-ogrn {
+  padding: 5px 50px;
+  margin: 0 10px 0 0;
+  color: #fff;
+  text-align: left;
+  font-size: 17px;
+}
+.footer__organization-info:hover,
+.footer__organization-inn:hover,
+.footer__organization-kpp:hover,
+.footer__organization-ogrn:hover,
+.footer__organization-bank-order:hover,
+.footer__organization-ks:hover,
+.footer__organization-bik:hover,
+.footer__organization-bank-inn:hover,
+.footer__organization-bank-ogrn:hover {
   color: orange;
 }
 /*# sourceMappingURL=style.css.map */
