@@ -1,6 +1,6 @@
 .hero {
   margin: 59px 0 0 0;
-  width: 1600px;
+  max-width: 1600px;
   position: relative;
   min-height: 572px;
   background: url("../img/hero/hero-img170x170.jpg"),
@@ -10,14 +10,51 @@
               url("../img/hero/hero-rect.svg"),
               url("../img/hero/hero-rect.svg");
   background-repeat: no-repeat;
-  background-position: 20px 21px, 902px 135px, 454px 32px, 252px 137px, 651px 136px, 453px 513px;
+  background-position: 20px 21px, right 20px top 142px, right 1118px top 32px, right 1311px top 137px, right 934px top 136px, right 1118px top 513px;
   background-size: 170px 170px, 678px 407px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
+
+  @media (max-width: 1550px) {
+    background-position: 20px 21px, right 20px top 142px, left 402px top 32px, left 208px top 137px, left 584px top 136px, left 402px top 513px;
+  }
+
+  @media (max-width: 1450px) {
+    background: url("../img/hero/hero-img678x407.jpg"),
+              url("../img/hero/hero-rect.svg"),
+              url("../img/hero/hero-rect.svg"),
+              url("../img/hero/hero-rect.svg"),
+              url("../img/hero/hero-rect.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px top 142px, left 402px top 32px, left 208px top 137px, left 584px top 136px, left 402px top 513px;
+    background-size: 678px 407px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
+  }
+
+  @media (max-width: 1345px) {
+    background-position: right 20px top 142px, right 913px top 32px, right 1102px top 137px, right 731px top 136px, right 913px top 513px;
+  }
+
+  @media (max-width: 1240px) {
+    background-position: right 20px top 142px, left 300px top 32px, left 111px top 137px, left 479px top 136px, left 300px top 513px;
+    background-size: 55% auto, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
+  }
+
+  // left 537px top 142px
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__title {
-  margin: 0 0 0 356px;
+  margin: 0 423px 0 0;
   width: 780px;
   height: 496px;
+  align-self: flex-end;
+
+  @media (max-width: 1240px) {
+    margin: 0 0 0 0;
+    align-self: flex-start;
+  }
 }
 
 .hero__list {
@@ -69,6 +106,9 @@
   width: 214px;
   min-height: 200px;
   // text-align: start;
+  @media (max-width: 1450px) {
+    display: none;
+  }
 }
 
 .hero__priest-title {

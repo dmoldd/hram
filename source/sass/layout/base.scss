@@ -10,8 +10,13 @@
 .container {
   margin: 0 auto;
   height: 100%;
-  width: 1600px;
+  width: 100%;
+  max-width: 1600px;
   padding: 0 20px;
+
+  // @include desktops {
+  //   width: 100vw;
+  // }
 }
 
 .visually-hidden {
@@ -42,7 +47,7 @@ img {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
   background-image: url("../img/hero/background1200x707.svg");
   background-repeat: no-repeat;
