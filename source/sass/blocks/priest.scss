@@ -8,6 +8,14 @@
   background: url('../img/hero/hero-rect.svg'), url('../img/hero/hero-rect.svg'), url('../img/hero/hero-rect.svg');
   background-position: 329px 197px, 79px 402px, 339px 525px;
   background-repeat: no-repeat;
+
+  @media (max-width: 1410px) {
+    background-position: 229px 297px, 19px 402px, 239px 525px;
+  }
+
+  @media (max-width: 1320px) {
+    background: none;
+  }
 }
 
 .priest__title {
@@ -20,6 +28,19 @@
 .priest__info {
   margin: 0 50px 0 425px;
   grid-area: B;
+
+  @media (max-width: 1410px) {
+    margin: 0 50px 0 298px;
+  }
+
+
+  @media (max-width: 1320px) {
+    margin: 0 50px 0 100px;
+  }
+
+  @media (max-width: 1270px) {
+    margin: 0 50px 0 20px;
+  }
 }
 
 .priest__info-title {
@@ -29,14 +50,32 @@
   padding: 20px 0 20px 0;
   font-size: 36px;
   line-height: 42px;
+
+  @media (max-width: 1410px) {
+    text-align: right;
+  }
 }
 
 .priest__desc {
   text-align: left;
-  font-size: 25px;
   padding: 10px 0 10px 0;
   font-size: 16px;
   line-height: 19px;
+
+  @media (max-width: 1410px) {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  @media (max-width: 1320px) {
+    font-size: 19px;
+    line-height: 21px;
+  }
+
+  @media (max-width: 1270px) {
+    font-size: 19px;
+    line-height: 21px;
+  }
 }
 
 .sim-slider {

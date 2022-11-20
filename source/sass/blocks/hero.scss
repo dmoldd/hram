@@ -2,7 +2,6 @@
   margin: 59px 0 0 0;
   max-width: 1600px;
   position: relative;
-  min-height: 572px;
   background: url("../img/hero/hero-img170x170.jpg"),
               url("../img/hero/hero-img678x407.jpg"),
               url("../img/hero/hero-rect.svg"),
@@ -37,6 +36,13 @@
     background-size: 55% auto, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
   }
 
+  @media (max-width: 1240px) {
+    background: url("../img/hero/hero-img678x407.jpg");
+    background-repeat: no-repeat;
+    background-position: right 20px top 142px;
+    background-size: 55% auto;
+  }
+
   // left 537px top 142px
 }
 
@@ -46,14 +52,21 @@
 }
 
 .hero__title {
-  margin: 0 423px 0 0;
+  margin: 0 423px 56px 0;
   width: 780px;
   height: 496px;
   align-self: flex-end;
 
   @media (max-width: 1240px) {
-    margin: 0 0 0 0;
+    margin: 0 0 85px 0;
     align-self: flex-start;
+  }
+
+  @media (max-width: 1200px) { // - До 768px не изменять
+    margin: 0 0 82px 0;
+    align-self: flex-start;
+    width: 67%;
+    height: auto;
   }
 }
 
