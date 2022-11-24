@@ -16,6 +16,12 @@
   @media (max-width: 1320px) {
     background: none;
   }
+
+  // @media (max-width: 1046px) {
+  //   display: flex;
+  //   flex-direction: column;
+  //   grid-column-gap: 0;
+  // }
 }
 
 .priest__title {
@@ -23,6 +29,11 @@
   font-size: 64px;
   font-weight: 400;
   text-align: left;
+
+  // @media (max-width: 1046px) {
+  //   order: -1;
+  //   margin: 50px 0 15px 0;
+  // }
 }
 
 .priest__info {
@@ -33,7 +44,6 @@
     margin: 0 50px 0 298px;
   }
 
-
   @media (max-width: 1320px) {
     margin: 0 50px 0 100px;
   }
@@ -41,12 +51,20 @@
   @media (max-width: 1270px) {
     margin: 0 50px 0 20px;
   }
+
+  @media (max-width: 944px) {
+    margin: 0 20px 0 20px;
+  }
+
+  @media (max-width: 915px) {
+    margin: 0 20px 0 0;
+  }
 }
 
 .priest__info-title {
   text-align: left;
   font-weight: 700;
-  font-size: 30px;
+  // font-size: 30px;
   padding: 20px 0 20px 0;
   font-size: 36px;
   line-height: 42px;
@@ -54,6 +72,10 @@
   @media (max-width: 1410px) {
     text-align: right;
   }
+
+  // @media (max-width: 1046px) {
+  //   text-align: center;
+  // }
 }
 
 .priest__desc {
@@ -76,11 +98,30 @@
     font-size: 19px;
     line-height: 21px;
   }
+
+  @media (max-width: 1183px) {
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  @media (max-width: 1110px) {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  @media (max-width: 1046px) {
+    font-size: 15px;
+    line-height: 17px;
+  }
 }
 
 .sim-slider {
   grid-area: C;
   position: relative;
+
+  // @media (max-width: 1046px) {
+  //   order: 0;
+  // }
 }
 
 .sim-slider-list {
@@ -99,6 +140,15 @@
   left: 0;
   top: 0;
   display: block;
+
+  // @media (max-width: 1046px) {
+
+  //   img {
+  //     margin: 0 auto;
+  //     width: 500px;
+  //     height: auto;
+  //   }
+  // }
 }
 
 /* Navigation item styles */

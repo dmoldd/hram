@@ -19,11 +19,21 @@
   &:hover {
     color: $sky;
   }
+
+  @media (max-width: 1199px) {
+    right: 138px;
+  }
 }
 
 .news__list {
   display: flex;
   outline: 1px solid gray;
+
+  @media (max-width: 1199px) {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .news__list-item {
@@ -31,10 +41,20 @@
   border-right: 1px solid gray;
 
 
+  &:last-child {
+    border: none;
+    width: 33.4%;
+  }
+
+  @media (max-width: 1199px) {
+    width: 100%;
+    border-bottom: 1px solid gray;
+
     &:last-child {
-      border: none;
-      width: 33.4%;
+      border-right: 1px solid gray;
+      width: 100%;
     }
+  }
 }
 
 .news__list-item .news__list-item-link {
@@ -49,19 +69,19 @@
   height: 100%;
 
   @media (max-width: 1480px) {
-    grid-template-rows: minmax(150px, 100%) 24vw;
-    grid-template-areas: "A B" "C C";
-  }
-
-  @media (max-width: 1480px) {
-    // grid-template-rows: minmax(150px, 100%) 34vw;
-    // grid-template-areas: "A B" "C C";
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     grid-row-gap: 0;
   }
 
+  @media (max-width: 1199px) {
+    display: grid;
+    grid-template-columns: 293px 1fr 150px;
+    grid-template-rows: 293px;
+    grid-template-areas: "A B C";
+    grid-column-gap: 20px;
+  }
 
   &:hover {
     background-color: $sky;
@@ -69,7 +89,6 @@
       color: $white;
     }
   }
-
 }
 
 .news__item-title {
@@ -84,6 +103,12 @@
     padding: 0;
     margin: 0;
     min-height: 100px;
+  }
+
+  @media (max-width: 1199px) {
+    grid-area: B;
+    font-size: 19px;
+    line-height: 1.5;
   }
 }
 
@@ -109,6 +134,22 @@
     width: 100%;
     text-align: right;
   }
+
+  @media (max-width: 1199px) {
+    margin: 50px 20px 0 0;
+    grid-area: C;
+    font-size: 30px;
+
+    br {
+      display: block;
+    }
+
+    span {
+      font-size: 136px;
+      line-height: 42px;
+      font-weight: 400;
+    }
+  }
 }
 
 .news__img {
@@ -122,6 +163,11 @@
     height: auto;
     flex: 1 0 auto;
     // flex:0 0 calc(100% - 2vw);
+  }
+
+  @media (max-width: 1199px) {
+    grid-area: A;
+    height: 100%;
   }
 
   img {
