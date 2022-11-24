@@ -20,6 +20,10 @@
   &:hover {
     color: $sky;
   }
+
+  @media (max-width: 1120px) {
+    right: 122px;
+  }
 }
 
 .pulications-main__list {
@@ -177,11 +181,12 @@
   @media (max-width: 1120px) {
     .publications-main__img {
       height: 233px;
+      // border: 1px;
 
       img {
         position: absolute;
-        bottom: 0;
-        right: -16px;
+        bottom: -69px;
+        right: -3px;
         width: 640px * 0.7;
         height: 480px * 0.7;
 

@@ -1170,6 +1170,11 @@ span.sim-dot {
 .pulications-main__link-other-publ:hover {
   color: #5b8ccb;
 }
+@media (max-width: 1120px) {
+  .pulications-main__link-other-publ {
+    right: 122px;
+  }
+}
 
 .pulications-main__list {
   display: flex;
@@ -1304,8 +1309,8 @@ span.sim-dot {
   }
   .publications-main__list-item:nth-child(3) .publications-main__list-item-link .publications-main__img img {
     position: absolute;
-    bottom: 0;
-    right: -16px;
+    bottom: -69px;
+    right: -3px;
     width: 448px;
     height: 336px;
   }
