@@ -23,6 +23,16 @@
   }
 }
 
+.footer__list-item--social-networks {
+  display: grid;
+  grid-template-columns: 1fr 70px 70px 70px 70px 1fr;
+  grid-template-rows: 300px 70px;
+  grid-template-areas: "A A A A A A" ". B C D E .";
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  height: 100%;
+}
+
 .footer__list-item-title {
   text-align: right;
   color: orange;
@@ -42,36 +52,40 @@
   }
 }
 
-.footer__list-soc-networks {
-  padding: 0 10px 0 0;
-  font-size: 70px;
-  text-align: right;
-  color: $white;
-
-  a {
-    transition: all 0.5s ease-in-out;
-  }
-
-  a:hover {
-    color: orange;
-  }
-}
-
 .footer__logo {
-  // position: absolute;
-  // top: 20px;
-  // right: 620px;
+  grid-area: A;
   margin: 0 10% 0 10%;
   width: 80%;
   svg {
     width: 100%;
-    height: auto;
+    height: 100%;
     fill: $white;
   }
 
   svg:hover {
     fill: rgb(107, 168, 238);
   }
+}
+
+.footer__list-youtube {
+  grid-area: B;
+  svg {
+    fill: red;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.footer__list-vk {
+  grid-area: C;
+}
+
+.footer__list-instagram {
+  grid-area: D;
+}
+
+.footer__list-mail {
+  grid-area: E;
 }
 
 .footer__developed {

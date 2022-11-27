@@ -1405,6 +1405,16 @@ span.sim-dot {
   padding: 0 0 0 50px;
 }
 
+.footer__list-item--social-networks {
+  display: grid;
+  grid-template-columns: 1fr 70px 70px 70px 70px 1fr;
+  grid-template-rows: 300px 70px;
+  grid-template-areas: "A A A A A A" ". B C D E .";
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  height: 100%;
+}
+
 .footer__list-item-title {
   text-align: right;
   color: orange;
@@ -1423,30 +1433,39 @@ span.sim-dot {
   color: orange;
 }
 
-.footer__list-soc-networks {
-  padding: 0 10px 0 0;
-  font-size: 70px;
-  text-align: right;
-  color: #fff;
-}
-.footer__list-soc-networks a {
-  transition: all 0.5s ease-in-out;
-}
-.footer__list-soc-networks a:hover {
-  color: orange;
-}
-
 .footer__logo {
+  grid-area: A;
   margin: 0 10% 0 10%;
   width: 80%;
 }
 .footer__logo svg {
   width: 100%;
-  height: auto;
+  height: 100%;
   fill: #fff;
 }
 .footer__logo svg:hover {
   fill: rgb(107, 168, 238);
+}
+
+.footer__list-youtube {
+  grid-area: B;
+}
+.footer__list-youtube svg {
+  fill: red;
+  height: 100%;
+  width: 100%;
+}
+
+.footer__list-vk {
+  grid-area: C;
+}
+
+.footer__list-instagram {
+  grid-area: D;
+}
+
+.footer__list-mail {
+  grid-area: E;
 }
 
 .footer__developed {
