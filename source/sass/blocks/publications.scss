@@ -88,11 +88,11 @@ button.publications__accordion::after {
   font-size: 25px;
   line-height: 21px;
   color:$white;
-  transition: color 0.4s ease-in-out;
+  transition: $transition-slow;
 
   &:hover {
     color: $white2;
-    transition: color 0.4s ease-in-out;
+    transition: $transition-slow;
   }
 }
 

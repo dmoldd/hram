@@ -14,7 +14,7 @@
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-  transition: all 0.3s;
+  transition: $transition-fast;
 
   &:hover {
     color: $sky;
@@ -64,7 +64,7 @@
   grid-template-areas: "A B" "C D";
   grid-row-gap: 60px;
   padding: 20px;
-  transition: all 0.6s;
+  transition: $transition-slow;
   position: relative;
   height: 100%;
 
@@ -184,7 +184,7 @@
   bottom: 20px;
   text-align: center;
   width: 100%;
-  transition: all 0.3s ease-in-out;
+  transition: $transition-fast;
 
   @media (max-width: 1480px) {
     display: none;

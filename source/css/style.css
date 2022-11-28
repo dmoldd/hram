@@ -263,7 +263,7 @@ ul, li {
 }
 
 .header__img {
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 .header__img:hover {
   fill: #5b8ccb;
@@ -284,7 +284,7 @@ ul, li {
   font-size: 19px;
   line-height: 21px;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
-  transition: all 0.9s ease;
+  transition: all 0.5s ease-in-out;
   color: #000000;
   position: relative;
   display: inline-block;
@@ -313,10 +313,10 @@ ul, li {
 }
 
 .main-nav__item--drop:hover {
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 .main-nav__item--drop:hover .main-nav__droplist {
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
   border-top: 15px solid rgba(0, 0, 0, 0);
   display: flex;
   flex-direction: column;
@@ -331,7 +331,7 @@ ul, li {
   display: block;
   background-color: #fff;
   min-width: 250px;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 .main-nav__item--drop .main-nav__droplink:hover {
   background-color: #5b8ccb;
@@ -593,11 +593,11 @@ button.publications__accordion::after {
   font-size: 25px;
   line-height: 21px;
   color: #fff;
-  transition: color 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .publications__item-link:hover {
   color: #cecece;
-  transition: color 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .about-family .container {
@@ -968,7 +968,7 @@ span.sim-dot {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-  transition: all 0.3s;
+  transition: all 0.2s ease-in-out;
 }
 .news__link-other-news:hover {
   color: #5b8ccb;
@@ -1017,7 +1017,7 @@ span.sim-dot {
   grid-template-areas: "A B" "C D";
   grid-row-gap: 60px;
   padding: 20px;
-  transition: all 0.6s;
+  transition: all 0.5s ease-in-out;
   position: relative;
   height: 100%;
 }
@@ -1135,7 +1135,7 @@ span.sim-dot {
   bottom: 20px;
   text-align: center;
   width: 100%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 @media (max-width: 1480px) {
   .news__link-see-more {
@@ -1165,7 +1165,7 @@ span.sim-dot {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-  transition: all 0.3s;
+  transition: all 0.2s ease-in-out;
 }
 .pulications-main__link-other-publ:hover {
   color: #5b8ccb;
@@ -1226,7 +1226,7 @@ span.sim-dot {
   display: block;
   max-width: none;
   max-height: none;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .publications-main__img img:hover {
   height: 528px;
@@ -1245,7 +1245,7 @@ span.sim-dot {
   flex-direction: column;
   padding: 0;
   position: relative;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 .publications-main__list-item .publications-main__list-item-link:first-child .publications-main__img img {
   position: absolute;
@@ -1326,7 +1326,7 @@ span.sim-dot {
   text-align: center;
   padding: 0 15px 25px 15px;
   flex: 1 0 auto;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.5s ease-in-out;
   margin: 0;
 }
 @media (max-width: 1120px) {
@@ -1341,7 +1341,7 @@ span.sim-dot {
   bottom: 15px;
   left: 36px;
   font-size: 20px;
-  transition: all 0.3s;
+  transition: all 0.2s ease-in-out;
 }
 .publications-main__link-read-more:hover {
   font-size: 25px;
@@ -1396,7 +1396,7 @@ span.sim-dot {
 
 .footer__list-item {
   padding: 20px;
-  width: 33.3%;
+  width: 37.5%;
   display: flex;
   flex-direction: column;
 }
@@ -1408,11 +1408,12 @@ span.sim-dot {
 .footer__list-item--social-networks {
   display: grid;
   grid-template-columns: 1fr 70px 70px 70px 70px 1fr;
-  grid-template-rows: 300px 70px;
+  grid-template-rows: 420px 70px;
   grid-template-areas: "A A A A A A" ". B C D E .";
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   height: 100%;
+  width: 25%;
 }
 
 .footer__list-item-title {
@@ -1422,14 +1423,20 @@ span.sim-dot {
   font-weight: 700;
 }
 
-.footer__list-item-link {
+.footer__list-item-text {
+  margin: 0;
+}
+
+.footer__list-item-link,
+.footer__list-item-text {
   color: #fff;
   transition: all 0.2s ease-in-out;
-  font-size: 20px;
+  font-size: 27px;
   text-align: right;
   padding: 10px 10px;
 }
-.footer__list-item-link:hover {
+.footer__list-item-link:hover,
+.footer__list-item-text:hover {
   color: orange;
 }
 
@@ -1439,33 +1446,65 @@ span.sim-dot {
   width: 80%;
 }
 .footer__logo svg {
+  fill: #fff;
   width: 100%;
   height: 100%;
-  fill: #fff;
-}
-.footer__logo svg:hover {
-  fill: rgb(107, 168, 238);
 }
 
 .footer__list-youtube {
-  grid-area: B;
+  grid-area: C;
+  fill: #ff1616;
+  transition: all 0.2s ease-in-out;
 }
 .footer__list-youtube svg {
-  fill: red;
-  height: 100%;
-  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.footer__list-youtube svg:hover {
+  transition: all 0.2s ease-in-out;
+  filter: drop-shadow(0 0 10px rgb(74, 74, 74));
+  padding: 5px 0 0 0;
 }
 
 .footer__list-vk {
-  grid-area: C;
+  grid-area: B;
+  fill: #0000df;
+  transition: all 0.2s ease-in-out;
+}
+.footer__list-vk svg {
+  transition: all 0.2s ease-in-out;
+}
+.footer__list-vk svg:hover {
+  transition: all 0.2s ease-in-out;
+  filter: drop-shadow(0 0 10px rgb(74, 74, 74));
+  padding: 5px 0 0 0;
 }
 
 .footer__list-instagram {
   grid-area: D;
+  fill: pink;
+  transition: all 0.2s ease-in-out;
+}
+.footer__list-instagram svg {
+  transition: all 0.2s ease-in-out;
+}
+.footer__list-instagram svg:hover {
+  transition: all 0.2s ease-in-out;
+  filter: drop-shadow(0 0 10px rgb(74, 74, 74));
+  padding: 5px 0 0 0;
 }
 
 .footer__list-mail {
   grid-area: E;
+  fill: #0000df;
+  transition: all 0.2s ease-in-out;
+}
+.footer__list-mail svg {
+  transition: all 0.2s ease-in-out;
+}
+.footer__list-mail svg:hover {
+  transition: all 0.2s ease-in-out;
+  filter: drop-shadow(0 0 10px rgb(74, 74, 74));
+  padding: 5px 0 0 0;
 }
 
 .footer__developed {
@@ -1517,7 +1556,7 @@ span.sim-dot {
   margin: 0 10px 0 0;
   color: #fff;
   text-align: left;
-  font-size: 19px;
+  font-size: 24px;
 }
 .footer__organization-info:hover,
 .footer__organization-inn:hover,

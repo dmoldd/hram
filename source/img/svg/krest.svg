@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 213.991 214.062"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="krest.svg"
+   inkscape:version="1.3-dev (f881f7c2, 2022-06-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.2262803"
+     inkscape:cx="-41.589186"
+     inkscape:cy="151.67821"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     id="rect1"
+     style="fill:#00ffff;stroke-width:0.820176"
+     d="m 86.658192,42.405593 v 41.83063 H 48.11298 v 50.796467 h 38.545212 v 37.84687 h 40.337618 v -37.84687 h 38.54551 V 84.236223 h -38.54551 v -41.83063 z"
+     sodipodi:nodetypes="ccccccccccccc" />
+</svg>

@@ -10,7 +10,7 @@
   font-size: 19px;
   line-height: 21px;
   border-bottom: 2px solid $opacity0;
-  transition: all 0.9s ease;
+  transition: $transition-slow;
   color: $black;
   position: relative;
   display: inline-block;
@@ -42,10 +42,10 @@
 }
 
 .main-nav__item--drop:hover {
-  transition: all 0.5s ease;
+  transition: $transition-slow;
 
   .main-nav__droplist {
-    transition: all 0.5s ease;
+    transition: $transition-slow;
     border-top: 15px solid $opacity0;
     display: flex;
     flex-direction: column;
@@ -63,7 +63,7 @@
   display: block;
   background-color: $white;
   min-width: 250px;
-  transition: all 0.5s ease;
+  transition: $transition-slow;
 
   &:hover {
     background-color: $sky;
