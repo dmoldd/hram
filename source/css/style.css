@@ -936,16 +936,60 @@ span.sim-dot {
 
 .contacts-main .container {
   display: grid;
-  grid-template-columns: 25% 75%;
-  grid-template-rows: 150px 700px;
-  grid-template-areas: "A A" "B C";
-  grid-row-gap: 50px;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 150px 350px 120px 120px 70px;
+  grid-template-areas: "A A" "B C" "D C" "E C" "F C";
+  grid-row-gap: 10px;
+  grid-column-gap: 25px;
 }
 
 .contacts-main__title {
   grid-area: A;
   font-size: 64px;
   font-weight: 400;
+}
+
+.contacts-main__logo {
+  grid-area: B;
+  height: 100%;
+}
+
+.contacts-main__adress {
+  grid-area: D;
+  line-height: 2;
+}
+.contacts-main__adress span {
+  font-size: 19px;
+  line-height: 1;
+  border-bottom: 3px solid #5b8ccb;
+}
+
+.contacts-main__email {
+  grid-area: E;
+}
+.contacts-main__email span {
+  font-size: 30px;
+  line-height: 2;
+  border-bottom: 3px solid #5b8ccb;
+}
+
+.contacts-main__email-link {
+  display: block;
+  grid-area: F;
+  border: 3px solid #5b8ccb;
+  place-self: center;
+  padding: 20px 71px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #5b8ccb;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+  border-radius: 20px;
+}
+.contacts-main__email-link:hover {
+  color: #fff;
+  background-color: #5b8ccb;
+  transition: all 0.2s ease-in-out;
 }
 
 .contacts-main__iframe {
