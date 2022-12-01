@@ -1,4 +1,4 @@
-.priest .container {
+.priest-main .container {
   display: grid;
   grid-template-columns: 1fr 400px;
   grid-template-rows: 150px 500px;
@@ -24,7 +24,7 @@
   // }
 }
 
-.priest__title {
+.priest-main__title {
   grid-area: A;
   font-size: 64px;
   font-weight: 400;
@@ -36,7 +36,7 @@
   // }
 }
 
-.priest__info {
+.priest-main__info {
   margin: 0 50px 0 425px;
   grid-area: B;
 
@@ -61,7 +61,7 @@
   }
 }
 
-.priest__info-title {
+.priest-main__info-title {
   text-align: left;
   font-weight: 700;
   // font-size: 30px;
@@ -78,7 +78,7 @@
   // }
 }
 
-.priest__desc {
+.priest-main__desc {
   text-align: left;
   padding: 10px 0 10px 0;
   font-size: 16px;
