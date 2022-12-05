@@ -70,3 +70,82 @@
     color: $white;
   }
 }
+
+.main-nav__logo {
+  position: absolute;
+  right: 19px;
+  top: 20px;
+  width: 40px;
+  height: 50px;
+
+  @media (max-width: 800px) {
+    right: 10px;
+    top: 10px;
+  }
+}
+
+.main-nav__img {
+  transition: $transition-slow;
+
+  &:hover {
+    fill: $sky;
+  }
+
+  &:active {
+    fill: $white2;
+  }
+}
+
+
+.main-nav__burger {
+  display: none;
+  background-image: url(./../../img/svg/burger-open.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 70px;
+  width: 70px;
+  margin: 0 0 0 -20px;
+
+  @media (max-width: 800px) {
+    display: block;
+  }
+}
+
+.main-nav--closed {
+  @media (max-width: 800px) {
+    .main-nav__list {
+      display: none;
+    }
+  }
+}
+
+.main-nav--opened {
+  .main-nav__list {
+    flex-direction: column;
+    padding: 17px 0 0 0;
+  }
+
+  .main-nav__list .main-nav__item {
+    text-align: center;
+    font-size: 30px;
+    margin: 0px 0px 0 0;
+    padding: 10px 0 10px 0;
+    border-bottom: none;
+  }
+
+  .main-nav__burger {
+    background-image: url(./../../img/svg/burger-close.svg);
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+
+  .main-nav__logo {
+    display: none;
+  }
+}
+
+.main-nav--nojs {
+
+}
+

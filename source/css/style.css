@@ -249,27 +249,15 @@ ul, li {
   min-height: 85px;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%) no-repeat center bottom/1560px 2px;
 }
+@media (max-width: 800px) {
+  .header {
+    min-height: 70px;
+    background: linear-gradient(90deg, rgb(126, 126, 126) 0%, rgb(126, 126, 126) 100%) no-repeat center bottom/1560px 1px;
+  }
+}
 
 .header .container {
   position: relative;
-}
-
-.header__logo {
-  position: absolute;
-  right: 19px;
-  top: 20px;
-  width: 40px;
-  height: 50px;
-}
-
-.header__img {
-  transition: all 0.5s ease-in-out;
-}
-.header__img:hover {
-  fill: #5b8ccb;
-}
-.header__img:active {
-  fill: #cecece;
 }
 
 .main-nav__list {
@@ -338,6 +326,72 @@ ul, li {
   color: #fff;
 }
 
+.main-nav__logo {
+  position: absolute;
+  right: 19px;
+  top: 20px;
+  width: 40px;
+  height: 50px;
+}
+@media (max-width: 800px) {
+  .main-nav__logo {
+    right: 10px;
+    top: 10px;
+  }
+}
+
+.main-nav__img {
+  transition: all 0.5s ease-in-out;
+}
+.main-nav__img:hover {
+  fill: #5b8ccb;
+}
+.main-nav__img:active {
+  fill: #cecece;
+}
+
+.main-nav__burger {
+  display: none;
+  background-image: url(./../../img/svg/burger-open.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 70px;
+  width: 70px;
+  margin: 0 0 0 -20px;
+}
+@media (max-width: 800px) {
+  .main-nav__burger {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__list {
+  flex-direction: column;
+  padding: 17px 0 0 0;
+}
+.main-nav--opened .main-nav__list .main-nav__item {
+  text-align: center;
+  font-size: 30px;
+  margin: 0px 0px 0 0;
+  padding: 10px 0 10px 0;
+  border-bottom: none;
+}
+.main-nav--opened .main-nav__burger {
+  background-image: url(./../../img/svg/burger-close.svg);
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+.main-nav--opened .main-nav__logo {
+  display: none;
+}
+
 .hero {
   margin: 59px 0 0 0;
   max-width: 1600px;
@@ -379,6 +433,18 @@ ul, li {
     background-size: 55% auto;
   }
 }
+@media (max-width: 800px) {
+  .hero {
+    margin: 30px 0 0 0;
+  }
+}
+@media (max-width: 718px) {
+  .hero {
+    margin: 30px 0 0 0;
+    background-size: calc(100% - 40px) auto;
+    background-position: right 20px top 285px;
+  }
+}
 
 .hero .container {
   display: flex;
@@ -403,6 +469,19 @@ ul, li {
     align-self: flex-start;
     width: 67%;
     height: auto;
+  }
+}
+@media (max-width: 800px) {
+  .hero__title {
+    margin: 0 0 100px 0;
+    align-self: flex-start;
+    width: 67%;
+    height: auto;
+  }
+}
+@media (max-width: 718px) {
+  .hero__title {
+    margin: 0px 0 423px 0;
   }
 }
 

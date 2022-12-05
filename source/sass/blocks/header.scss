@@ -1,29 +1,13 @@
 .header {
   min-height: 85px;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%) no-repeat center bottom / 1560px 2px;
+
+  @media (max-width: 800px) {
+    min-height: 70px;
+    background: linear-gradient(90deg, rgb(126, 126, 126) 0%, rgb(126, 126, 126) 100%) no-repeat center bottom / 1560px 1px;
+  }
 }
 
 .header .container {
   position: relative;
-}
-
-.header__logo {
-  position: absolute;
-  right: 19px;
-  top: 20px;
-  width: 40px;
-  height: 50px;
-}
-
-.header__img {
-  transition: $transition-slow;
-
-  &:hover {
-    fill: $sky;
-  }
-
-  &:active {
-    fill: $white2;
-  }
-
 }
