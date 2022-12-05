@@ -369,7 +369,7 @@ ul, li {
 
 .main-nav__burger {
   display: none;
-  background-image: url(./../../img/svg/burger-open.svg);
+  background-image: url(../img/svg/burger-open.svg);
   background-repeat: no-repeat;
   background-position: center center;
   height: 70px;
@@ -396,7 +396,7 @@ ul, li {
   width: 100%;
   height: 100vh;
   background-color: #5b8ccb;
-  background-image: url(./../../img/hero/menu-opened.jpg);
+  background-image: url(../img/hero/menu-opened.jpg);
   background-repeat: no-repeat;
   background-position: center bottom 20px;
   background-size: calc(100% - 40px) auto;
@@ -424,7 +424,7 @@ ul, li {
   display: none;
 }
 .main-nav--opened .main-nav__burger {
-  background-image: url(./../../img/svg/burger-close.svg);
+  background-image: url(../img/svg/burger-close.svg);
   position: absolute;
   top: 0;
   left: 20px;
