@@ -1,3 +1,9 @@
+.pulications-main {
+  @media (max-width: 1120px) {
+    display: none;
+  }
+}
+
 .pulications-main .container {
   position: relative;
 }

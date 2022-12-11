@@ -98,3 +98,8 @@ ul, li {
   font-size: 40px;
   color: $sky;
 }
+
+.maincontent {
+  display: flex;
+  flex-direction: column;
+}

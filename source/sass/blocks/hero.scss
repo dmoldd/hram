@@ -73,6 +73,11 @@
     background-position: right 0 top 210px;
   }
 
+  @media (max-width: 540px) {
+    background-position: right 0 top 210px;
+    order: 1;
+  }
+
   @media (max-width: 500px) {
     background-position: right 0 top 190px;
   }

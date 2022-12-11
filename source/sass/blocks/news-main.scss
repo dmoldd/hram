@@ -1,10 +1,15 @@
+.news-main {
+  @media (max-width: 540px) {
+    order: 2;
+  }
+}
+
 .news-main .container {
   position: relative;
 
   @media (max-width: 540px) {
     padding: 0;
   }
-
 }
 
 .news-main__title {
