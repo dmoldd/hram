@@ -1654,7 +1654,7 @@ span.sim-dot {
 }
 @media (max-width: 740px) {
   .contacts-main__iframe {
-    min-height: 500px;
+    height: 500px;
   }
 }
 
