@@ -11,4 +11,8 @@
 .header .container {
   position: relative;
   z-index: 3;
+
+  @media (max-width: 800px) {
+    padding: 0;
+  }
 }
