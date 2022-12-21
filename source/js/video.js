@@ -21,7 +21,7 @@ function setupVideo(video) {
     });
 
     link.removeAttribute('href');
-    video.classList.add('video-iframe--enabled');
+    video.classList.add('video-iframegit --enabled');
 }
 
 function parseMediaURL(media) {
