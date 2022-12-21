@@ -148,7 +148,7 @@
       <section class="pulications-main">
         <div class="container">
           <h2 class="pulications-main__title">Публикации</h2>
-          <a class="pulications-main__link-other-publ">Все материалы <i class="fa-solid fa-arrow-right-long"></i></a>
+          <a class="pulications-main__link-other-publ">Все материалы</i></a>
           <ul class="pulications-main__list">
             <li class="publications-main__list-item">
               <a href="#" class="publications-main__list-item-link">
@@ -177,20 +177,23 @@
       <section class="film-main">
         <div class="container">
           <h2 class="film-main__title">Фильм о нас</h2>
-          <div class="film-main__content">
-            <iframe src="https://www.youtube.com/embed/y4Psizo1DsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="video-iframe">
+            <a href="" class="video-iframe__link">
+              <img class="video-iframe__media" src="img/film/maxresdefault.jpg" alt="Староверы Юга России. Документальный фильм">
+
+            </a>
+            <button class="video-iframe__button video-iframe__button--enabled" alt="Запустить видео">
+              <svg width="68" height="48" viewBox="0 0 68 48"><path class="video-iframe__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path><path class="video-iframe__button-icon" d="M 45,24 27,14 27,34"></path></svg>
+            </button>
+            <!-- <iframe class="video__media" src="https://www.youtube.com/embed/y4Psizo1DsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           </div>
-          <a class="film-main__subscribe" href="https://www.youtube.com/@user-ow9jy1zb4k?sub_confirmation=1">ПОДПИСАТЬСЯ</a>
         </div>
       </section>
       <section class="contacts-main">
         <div class="container">
           <h2 class="contacts-main__title">Контакты</h2>
-          <p class="contacts-main__adress">Адрес:<br> <span>г. Сочи, с. Некрасовское, ул. Общинная , д. 1</span></p>
-          <p class="contacts-main__email">Электронная почта:<br> <span>artemgeorgievich@yandex.ru</span></p>
-          <a class="contacts-main__email-link" href="mailto:artemgeorgievich@yandex.ru">НАПИШИТЕ<br> НАМ</a>
           <div class="contacts-main__iframe" style="position:relative;overflow:hidden;">
-            <a href="https://yandex.ru/maps/239/sochi/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Сочи</a><a href="https://yandex.ru/maps/239/sochi/house/obshchinnaya_ulitsa_1/Z0AYfwFnTkQPQFppfXhxcX1hbA==/?ll=39.967718%2C43.400128&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Общинная улица, 1 на карте Сочи — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUZ6-rB1D" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2898.904053982909!2d39.96583101494357!3d43.39993477678965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f59505ed073d6f%3A0x72d5b0178dafeb1a!2z0J7QsdGJ0LjQvdC90LDRjyDRg9C7LiwgMSwg0JLQtdGA0YXQvdC1LdCY0LzQtdGA0LXRgtC40L3RgdC60LDRjyDQkdGD0YXRgtCwLCDQmtGA0LDRgdC90L7QtNCw0YDRgdC60LjQuSDQutGA0LDQuSwgMzU0MzQ5!5e0!3m2!1sru!2sru!4v1671623049129!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>
@@ -257,5 +260,6 @@
   <script src="js/burger-opener.js"></script>
   <script src="js/slider.js">new Sim()</script>
   <script src="https://kit.fontawesome.com/e5b88955d2.js" crossorigin="anonymous"></script>
+  <script src="js/video.js"></script>
 </body>
 </html>
