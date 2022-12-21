@@ -11,20 +11,28 @@
 
   @media (max-width: 1199px) {
     width: 100%;
+    height: auto;
   }
 
-  @media (max-width: 560px) {
-    height: 400px;
-  }
+  // @media (max-width: 560px) {
+  //   height: 400px;
+  // }
 
-  @media (max-width: 560px) {
-    height: 300px;
-  }
+  // @media (max-width: 560px) {
+  //   height: 300px;
+  // }
 
-  @media (max-width: 320px) {
-    height: 200px;
+  // @media (max-width: 320px) {
+  //   height: 200px;
+  // }
+}
+
+.video-iframe__link img {
+  @media (max-width: 1199px) {
+    margin: 0 auto;
   }
 }
+
 
 .video-iframe__button {
   position: absolute;
@@ -40,18 +48,20 @@
   &:hover {
     cursor: pointer;
   }
-
   display: none;
 }
 
 .video-iframe__button-shape {
   fill: #212121;
   fill-opacity: 0.8;
+  transition: $transition-fast;
 }
+
 
 .video-iframe:hover .video-iframe__button-shape {
   fill: #ff0000;
   fill-opacity: 1;
+  transition: $transition-fast;
 }
 
 .video-iframe__button-icon {

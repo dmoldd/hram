@@ -1380,14 +1380,14 @@ span.sim-dot {
   }
 }
 
+.contacts-main .container {
+  padding: 0;
+}
+
 .contacts-main__title {
+  padding: 0 0 0 20px;
   font-size: 64px;
   font-weight: 400;
-}
-@media (max-width: 740px) {
-  .contacts-main__title {
-    display: none;
-  }
 }
 
 .contacts-main__iframe {
@@ -1943,6 +1943,7 @@ span.sim-dot {
 }
 
 .film-main .container {
+  padding: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -2007,21 +2008,13 @@ span.sim-dot {
 @media (max-width: 1199px) {
   .video-iframe {
     width: 100%;
+    height: auto;
   }
 }
-@media (max-width: 560px) {
-  .video-iframe {
-    height: 400px;
-  }
-}
-@media (max-width: 560px) {
-  .video-iframe {
-    height: 300px;
-  }
-}
-@media (max-width: 320px) {
-  .video-iframe {
-    height: 200px;
+
+@media (max-width: 1199px) {
+  .video-iframe__link img {
+    margin: 0 auto;
   }
 }
 
@@ -2044,11 +2037,13 @@ span.sim-dot {
 .video-iframe__button-shape {
   fill: #212121;
   fill-opacity: 0.8;
+  transition: all 0.2s ease-in-out;
 }
 
 .video-iframe:hover .video-iframe__button-shape {
   fill: #ff0000;
   fill-opacity: 1;
+  transition: all 0.2s ease-in-out;
 }
 
 .video-iframe__button-icon {
@@ -2061,6 +2056,7 @@ span.sim-dot {
 
 .footer .container {
   position: relative;
+  padding: 0;
 }
 @media (max-width: 700px) {
   .footer .container {

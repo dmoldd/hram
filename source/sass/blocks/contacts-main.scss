@@ -8,16 +8,13 @@
 }
 
 .contacts-main .container {
-
+  padding: 0;
 }
 
 .contacts-main__title {
+  padding: 0 0 0 20px;
   font-size: 64px;
   font-weight: 400;
-
-  @media (max-width: 740px) {
-    display: none;
-  }
 }
 
 .contacts-main__iframe {

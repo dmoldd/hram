@@ -10,7 +10,7 @@ function setupVideo(video) {
     let link = video.querySelector('.video-iframe__link');
     let media = video.querySelector('.video-iframe__media');
     let button = video.querySelector('.video-iframe__button');
-    let id = parseMediaURL(media);
+    let id = 'y4Psizo1DsE';
 
     video.addEventListener('click', () => {
         let iframe = createIframe(id);
@@ -21,15 +21,7 @@ function setupVideo(video) {
     });
 
     link.removeAttribute('href');
-    video.classList.add('video-iframegit --enabled');
-}
-
-function parseMediaURL(media) {
-    let regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
-    let url = media.src;
-    let match = url.match(regexp);
-
-    return match[1];
+    video.classList.add('video-iframe--enabled');
 }
 
 function createIframe(id) {
@@ -38,7 +30,7 @@ function createIframe(id) {
     iframe.setAttribute('allowfullscreen', '');
     iframe.setAttribute('allow', 'autoplay');
     iframe.setAttribute('src', generateURL(id));
-    iframe.classList.add('video__media');
+    iframe.classList.add('video-iframe__media');
 
     return iframe;
 }
