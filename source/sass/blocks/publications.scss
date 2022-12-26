@@ -1,4 +1,7 @@
 .publications .container {
+  @media (max-width: 540px) {
+    padding: 0;
+  }
 }
 
 .publications__title {
@@ -16,6 +19,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .publications__item {
@@ -50,8 +54,47 @@
     }
   }
 
-  &:last-child {
-    margin: 25px 0 25px 35.3%;
+  @media (max-width: 1539px) {
+    width: 449px;
+  }
+
+  @media (max-width: 1037px) and (min-width: 541px) {
+  width: 100%;
+  grid-template-columns: 310px 1fr;
+  grid-template-rows: minmax(30px, max-content) minmax(70px, max-content) minmax(30px, max-content) 30px;
+  row-gap: 20px;
+  column-gap: 30px;
+  grid-template-areas:  "D A"
+                        "D B"
+                        "D C"
+                        "D E";
+
+  &:hover .publications__item-img img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 790px) {
+    width: 380px;
+    grid-template-columns: 340px;
+    grid-template-rows: 310px minmax(30px, max-content) minmax(70px, max-content) minmax(30px, max-content) 30px;
+    grid-template-areas: "D"
+    "A"
+    "B"
+    "C"
+    "E";
+  }
+
+  @media (max-width: 540px) {
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px minmax(30px, max-content) minmax(70px, max-content) minmax(30px, max-content) 30px;
+    column-gap: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 0 30px 0;
   }
 }
 
@@ -59,6 +102,10 @@
   grid-area: A;
   font-weight: 400;
   margin: 0;
+
+  @media (max-width: 540px) {
+    text-align: center;
+  }
 }
 
 .publications__item-img {
@@ -74,6 +121,15 @@
     max-height: none;
     transition: $transition-slow;
   }
+
+  @media (max-width: 540px) {
+    border-radius: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .publications__item-date {
@@ -81,11 +137,20 @@
   margin: 0;
   font-size: 18px;
   color: #555151;
+
+  @media (max-width: 540px) {
+    text-align: center;
+  }
 }
 
 .publications__item-desc {
   grid-area: B;
   margin: 0;
+
+  @media (max-width: 540px) {
+    padding: 0 50px;
+    text-align: center;
+  }
 }
 
 .publications__item-link {
@@ -100,6 +165,11 @@
     font-size: 22px;
     transition: $transition-slow;
     color: white;
+  }
+
+  @media (max-width: 790px) {
+    position: static;
+    text-align: center;
   }
 }
 
