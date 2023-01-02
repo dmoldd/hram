@@ -2,26 +2,30 @@
   margin: 59px 0 0 0;
   max-width: 1600px;
   position: relative;
-  background: url("../img/hero/hero-img170x170.jpg"),
-              url("../img/hero/hero-img678x407.jpg"),
-              url("../img/hero/hero-rect.svg"),
-              url("../img/hero/hero-rect.svg"),
-              url("../img/hero/hero-rect.svg"),
-              url("../img/hero/hero-rect.svg");
+  background: url("../img/hero/hero-img170x170.jpg"), url("../img/hero/hero-img678x407.jpg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
   background-repeat: no-repeat;
   background-position: 20px 21px, right 20px top 142px, right 1118px top 32px, right 1311px top 137px, right 934px top 136px, right 1118px top 513px;
   background-size: 170px 170px, 678px 407px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
 
-  @media (min-resolution: 2dppx) {
-    background: url("../img/hero/hero-img170x170@2x.jpg"),
-                url("../img/hero/hero-img678x407@2x.jpg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg");
+  @supports (background: url("../img/hero/hero-img170x170.webp")) {
+    background: url("../img/hero/hero-img170x170.webp"), url("../img/hero/hero-img678x407.webp"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
     background-repeat: no-repeat;
     background-position: 20px 21px, right 20px top 142px, right 1118px top 32px, right 1311px top 137px, right 934px top 136px, right 1118px top 513px;
     background-size: 170px 170px, 678px 407px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/hero/hero-img170x170@2x.jpg"), url("../img/hero/hero-img678x407@2x.jpg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
+    background-repeat: no-repeat;
+    background-position: 20px 21px, right 20px top 142px, right 1118px top 32px, right 1311px top 137px, right 934px top 136px, right 1118px top 513px;
+    background-size: 170px 170px, 678px 407px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
+
+    @supports (background: url("../img/hero/hero-img170x170@2x.webp")) {
+      background: url("../img/hero/hero-img170x170@2x.webp"), url("../img/hero/hero-img678x407@2x.webp"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
+      background-repeat: no-repeat;
+      background-position: 20px 21px, right 20px top 142px, right 1118px top 32px, right 1311px top 137px, right 934px top 136px, right 1118px top 513px;
+      background-size: 170px 170px, 678px 407px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
+    }
   }
 
   @media (max-width: 1550px) {
@@ -29,25 +33,31 @@
   }
 
   @media (max-width: 1450px) {
-    background: url("../img/hero/hero-img678x407.jpg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg");
+    background: url("../img/hero/hero-img678x407.jpg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
     background-repeat: no-repeat;
     background-position: right 20px top 142px, left 402px top 32px, left 208px top 137px, left 584px top 136px, left 402px top 513px;
     background-size: 678px 407px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
+
+    @supports (background: url("../img/hero/hero-img678x407.webp")) {
+      background: url("../img/hero/hero-img678x407.webp"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
+      background-repeat: no-repeat;
+      background-position: right 20px top 142px, left 402px top 32px, left 208px top 137px, left 584px top 136px, left 402px top 513px;
+      background-size: 678px 407px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
+    }
   }
 
   @media (max-width: 1450px) and (min-resolution: 2dppx) {
-    background: url("../img/hero/hero-img678x407@2x.jpg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg");
+    background: url("../img/hero/hero-img678x407@2x.jpg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
     background-repeat: no-repeat;
     background-position: right 20px top 142px, left 402px top 32px, left 208px top 137px, left 584px top 136px, left 402px top 513px;
     background-size: 678px 407px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
+
+    @supports (background: url("../img/hero/hero-img678x407@2x.webp")) {
+      background: url("../img/hero/hero-img678x407@2x.webp"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
+      background-repeat: no-repeat;
+      background-position: right 20px top 142px, left 402px top 32px, left 208px top 137px, left 584px top 136px, left 402px top 513px;
+      background-size: 678px 407px, 30px 30px, 30px 30px, 30px 30px, 30px 30px;
+    }
   }
 
   @media (max-width: 1345px) {
@@ -64,6 +74,13 @@
     background-repeat: no-repeat;
     background-position: right 20px top 142px;
     background-size: 55% auto;
+
+    @supports (background: url("../img/hero/hero-img678x407.webp")) {
+      background: url("../img/hero/hero-img678x407.webp");
+      background-repeat: no-repeat;
+      background-position: right 20px top 142px;
+      background-size: 55% auto;
+    }
   }
 
   @media (max-width: 1240px) and (min-resolution: 2dppx) {
@@ -71,6 +88,13 @@
     background-repeat: no-repeat;
     background-position: right 20px top 142px;
     background-size: 55% auto;
+
+    @supports (background: url("../img/hero/hero-img678x407@2x.webp")) {
+      background: url("../img/hero/hero-img678x407@2x.webp");
+      background-repeat: no-repeat;
+      background-position: right 20px top 142px;
+      background-size: 55% auto;
+    }
   }
 
   @media (max-width: 1100px) {
@@ -83,23 +107,31 @@
 
   @media (max-width: 718px) {
     margin: 30px 0 0 0;
-    background: url("../img/hero/hero-img678x407.jpg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg");
+    background: url("../img/hero/hero-img678x407.jpg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
     background-repeat: no-repeat;
     background-position: right 0 top 285px, right 18% top 15px, right 7% top 91px, right 25% top 215px;
     background-size: 100% auto, 20px 20px, 20px 20px, 20px 20px;
+
+    @supports (background: url("../img/hero/hero-img678x407.webp")) {
+      background: url("../img/hero/hero-img678x407.webp"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
+      background-repeat: no-repeat;
+      background-position: right 0 top 285px, right 18% top 15px, right 7% top 91px, right 25% top 215px;
+      background-size: 100% auto, 20px 20px, 20px 20px, 20px 20px;
+    }
   }
 
   @media (max-width: 718px) and (min-resolution: 2dppx) {
-    background: url("../img/hero/hero-img678x407@2x.jpg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg");
+    background: url("../img/hero/hero-img678x407@2x.jpg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
     background-repeat: no-repeat;
     background-position: right 0 top 285px, right 18% top 15px, right 7% top 91px, right 25% top 215px;
     background-size: 100% auto, 20px 20px, 20px 20px, 20px 20px;
+
+    @supports (background: url("../img/hero/hero-img678x407@2x.webp")) {
+      background: url("../img/hero/hero-img678x407@2x.webp"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
+      background-repeat: no-repeat;
+      background-position: right 0 top 285px, right 18% top 15px, right 7% top 91px, right 25% top 215px;
+      background-size: 100% auto, 20px 20px, 20px 20px, 20px 20px;
+    }
   }
 
   @media (max-width: 680px) {
@@ -132,23 +164,31 @@
   }
 
   @media (max-width: 420px) {
-    background: url("../img/hero/hero-img300x280.jpg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg");
+    background: url("../img/hero/hero-img300x280.jpg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
     background-repeat: no-repeat;
     background-position: right 0 top 175px, right 18% top 15px, right 7% top 71px, right 25% top 115px;
     background-size: 100% auto, 10px 10px, 10px 10px, 10px 10px;
+
+    @supports (background: url("../img/hero/hero-img300x280.webp")) {
+      background: url("../img/hero/hero-img300x280.webp"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
+      background-repeat: no-repeat;
+      background-position: right 0 top 175px, right 18% top 15px, right 7% top 71px, right 25% top 115px;
+      background-size: 100% auto, 10px 10px, 10px 10px, 10px 10px;
+    }
   }
 
   @media (max-width: 420px) and (min-resolution: 2dppx) {
-    background: url("../img/hero/hero-img300x280@2x.jpg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg"),
-                url("../img/hero/hero-rect.svg");
+    background: url("../img/hero/hero-img300x280@2x.jpg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
     background-repeat: no-repeat;
     background-position: right 0 top 175px, right 18% top 15px, right 7% top 71px, right 25% top 115px;
     background-size: 100% auto, 10px 10px, 10px 10px, 10px 10px;
+
+    @supports (background: url("../img/hero/hero-img300x280@2x.webp")) {
+      background: url("../img/hero/hero-img300x280@2x.webp"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
+      background-repeat: no-repeat;
+      background-position: right 0 top 175px, right 18% top 15px, right 7% top 71px, right 25% top 115px;
+      background-size: 100% auto, 10px 10px, 10px 10px, 10px 10px;
+    }
   }
 }
 
@@ -233,11 +273,12 @@
   background-color: $sky;
   margin: 0 2px 0 0;
   padding: 20px;
+
   &:first-child {
     width: 527px;
   }
 
-  &:nth-child(2){
+  &:nth-child(2) {
     width: 524px;
   }
 
@@ -254,12 +295,10 @@
   line-height: 21px;
   color: $white1;
   margin: 15px 0 0 0;
-  // text-align: center;
 }
 
 .hero__text {
   font-size: 24px;
-  // text-align: center;
   color: $white2;
   margin: 15px 0 0 0;
 }
@@ -276,21 +315,21 @@
     left: 20px;
   }
 
-  @media (max-width: 1450px) and (min-width: 800px)  {
+  @media (max-width: 1450px) and (min-width: 800px) {
     right: 20px;
     top: 10px;
     width: 380px;
   }
 
-  @media (max-width: 1220px) and (min-width: 800px)  {
+  @media (max-width: 1220px) and (min-width: 800px) {
     width: 335px;
   }
 
-  @media (max-width: 1220px) and (min-width: 800px)  {
+  @media (max-width: 1220px) and (min-width: 800px) {
     width: 335px;
   }
 
-  @media (max-width: 1100px) and (min-width: 800px)  {
+  @media (max-width: 1100px) and (min-width: 800px) {
     top: -5px;
     font-size: 14px;
     width: 295px;
@@ -372,8 +411,4 @@
       text-align: center;
     }
   }
-}
-
-.working-hours__title--pray {
-
 }
