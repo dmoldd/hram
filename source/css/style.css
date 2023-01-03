@@ -977,7 +977,6 @@ ul, li {
   background-color: #eaeaea;
   margin: 25px 25px;
   padding: 20px;
-  border-radius: 20px;
   box-shadow: 7px 7px 18px -2px #ccc, -7px -7px 18px -2px #ccc;
   transition: all 0.2s ease-in-out;
 }
@@ -1043,7 +1042,6 @@ ul, li {
 
 .publications__item-img {
   grid-area: D;
-  border-radius: 20px;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
 }
@@ -1712,12 +1710,38 @@ span.sim-dot {
   max-height: none;
   transform: translate(-35%, 0);
 }
+@media (max-width: 1480px) {
+  .news-main__list-item:first-child .news-main__list-item-link .news-main__img img {
+    width: auto;
+    height: 360px;
+    transform: translate(0, 0);
+  }
+}
+@media (max-width: 860px) {
+  .news-main__list-item:first-child .news-main__list-item-link .news-main__img img {
+    width: 160%;
+    height: auto;
+  }
+}
 .news-main__list-item:nth-child(2) .news-main__list-item-link .news-main__img img {
   width: auto;
   height: 110%;
   max-width: none;
   max-height: none;
   transform: translate(-40%, 0);
+}
+@media (max-width: 1480px) {
+  .news-main__list-item:nth-child(2) .news-main__list-item-link .news-main__img img {
+    width: auto;
+    height: 360px;
+    transform: translate(0, 0);
+  }
+}
+@media (max-width: 860px) {
+  .news-main__list-item:nth-child(2) .news-main__list-item-link .news-main__img img {
+    width: 170%;
+    height: auto;
+  }
 }
 .news-main__list-item:last-child {
   border: none;
@@ -1801,7 +1825,7 @@ span.sim-dot {
   .news-main__item-title {
     padding: 0;
     margin: 0;
-    min-height: 100px;
+    min-height: 150px;
   }
 }
 @media (max-width: 1199px) {
@@ -1877,11 +1901,35 @@ span.sim-dot {
   grid-area: C;
   overflow: hidden;
 }
+@media (max-width: 1480px) {
+  .news-main__img {
+    max-height: 360px;
+  }
+}
 .news-main__img img {
   width: 100%;
   height: auto;
   max-width: none;
   max-height: none;
+}
+@media (max-width: 1480px) {
+  .news-main__img img {
+    width: 100%;
+    height: auto;
+    transform: translate(0, -25%);
+  }
+}
+@media (max-width: 1199px) {
+  .news-main__img img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 860px) {
+  .news-main__img img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media (max-width: 1480px) {
   .news-main__img {
@@ -1953,6 +2001,7 @@ span.sim-dot {
 }
 
 .film-main__title {
+  padding: 20px;
   font-size: 64px;
   font-weight: 400;
 }

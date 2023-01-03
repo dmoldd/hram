@@ -39,7 +39,7 @@
   background-color: #eaeaea;
   margin: 25px 25px;
   padding: 20px;
-  border-radius: 20px;
+  // border-radius: 20px;
   box-shadow: 7px 7px 18px -2px #ccc, -7px -7px 18px -2px #ccc;
   transition: $transition-fast;
 
@@ -110,7 +110,7 @@
 
 .publications__item-img {
   grid-area: D;
-  border-radius: 20px;
+  // border-radius: 20px;
   overflow: hidden;
   transition: $transition-slow;
 
