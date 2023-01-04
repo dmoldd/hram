@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const accordions = document.querySelectorAll('.publications__accordion');
-  const accordionContents = document.querySelectorAll('.publications__item-inner');
+  const accordions = document.querySelectorAll('.questions-list__question-title');
+  const accordionContents = document.querySelectorAll('.questions-list__question-inner');
 
   accordions.forEach((itemAcc) => {
     itemAcc.addEventListener('click', (event) => {

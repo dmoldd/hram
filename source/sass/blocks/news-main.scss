@@ -71,7 +71,6 @@
     right: 25px;
     top: 20px;
   }
-
 }
 
 .news-main__list {
@@ -198,6 +197,7 @@
   @media (min-width: 541px) {
     &:hover {
       background-color: $sky;
+
       .news__item-title {
         color: $white;
       }
@@ -344,7 +344,6 @@
     grid-area: A;
     width: 100%;
   }
-
 }
 
 .news-main__link-see-more {

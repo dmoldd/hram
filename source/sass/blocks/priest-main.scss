@@ -12,7 +12,7 @@
   grid-template-areas: "A A" "B C";
   grid-column-gap: 20px;
   grid-row-gap: 50px;
-  background: url('../img/hero/hero-rect.svg'), url('../img/hero/hero-rect.svg'), url('../img/hero/hero-rect.svg');
+  background: url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg"), url("../img/hero/hero-rect.svg");
   background-position: 329px 197px, 79px 402px, 339px 525px;
   background-repeat: no-repeat;
 
@@ -266,7 +266,6 @@
       width: 100%;
     }
   }
-
 }
 
 /* Navigation item styles */
@@ -295,11 +294,11 @@ div.sim-slider-arrow-right {
 }
 
 div.sim-slider-arrow-left:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 div.sim-slider-arrow-right:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 div.sim-slider-dots {
@@ -318,7 +317,7 @@ span.sim-dot {
   margin: 5px 7px;
   padding: 0;
   display: inline-block;
-  background-color: #BBB;
+  background-color: #bbb;
   border-radius: 5px;
   cursor: pointer;
   transform: translateY(-40px);
