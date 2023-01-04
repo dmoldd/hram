@@ -1,17 +1,118 @@
+.faq .container {
+  display: flex;
+  flex-wrap: wrap;
+
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+}
+
+.faq__title {
+  width: 100%;
+  font-size: 64px;
+  font-weight: 400;
+
+  @media (max-width: 540px) {
+    font-size: 36px;
+    margin: 40px 0 0 20px;
+  }
+}
+
+.faq__ask {
+  width: 250px;
+
+  @media (max-width: 1199px) {
+    width: 180px;
+  }
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+}
+
+.faq__ask-title {
+  font-size: 28px;
+  margin: 10px 0 0 0;
+}
+
+.faq__ask-email {
+  text-align: left;
+  color: gray;
+  line-height: 1.5;
+
+  @media (max-width: 1000px) {
+    text-align: center;
+    padding: 0 100px;
+  }
+
+  @media (max-width: 700px) {
+    padding: 0 20px;
+  }
+
+  a {
+    text-decoration: underline;
+    color: $sky;
+  }
+}
+
+.questions-list {
+  width: calc(100% - 300px);
+  margin: 0 0 0 auto;
+
+  @media (max-width: 1199px) {
+    width: calc(100% - 220px);
+  }
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+
+  @media (max-width: 540px) {
+    margin: 0;
+  }
+}
+
+.questions-list__question {
+  background-color: #eaeaea;
+  margin: 0 0 15px 0;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+
 .questions-list__question-title {
-  padding: 10px;
+  border-radius: 5px;
+  padding: 30px 30px 30px 60px;
   // margin: 10px;
   width: 100%;
   border: none;
-  background-color: $white;
+  background-color: #eaeaea;
   text-align: left;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 42px;
   cursor: pointer;
   position: relative;
 
+  @media (max-width: 1199px) {
+    font-size: 25px;
+    padding: 15px 30px 15px 60px;
+  }
+
+  @media (max-width: 785px) {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 16px;
+    line-height: 1.3;
+    padding: 15px 10px 15px 40px;
+  }
+
+
   &:hover {
-    background-color: $sky;
+    // background-color: $sky;
     transition: background-color 0.2s ease-in-out;
   }
 }
@@ -19,7 +120,8 @@
 button.questions-list__question-title::after {
   content: "+";
   position: absolute;
-  right: 20px;
+  left: 20px;
+  top: 33%;
 }
 
 button.questions-list__question-title.is-opened::after {
@@ -31,7 +133,7 @@ button.questions-list__question-title.is-opened::after {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
-  background-color: $sky;
+  // background-color: $sky;
 
   .questions-list__question-inner {
     margin: 0 auto 10px;
