@@ -119,10 +119,6 @@
   }
 }
 
-.footer__list-item-text {
-  margin: 0;
-}
-
 .footer__list-item-link,
 .footer__list-item-text {
   color: $white;
@@ -192,6 +188,13 @@
   }
 }
 
+.footer__list-item-text {
+  margin: 0;
+
+  &--unhover:hover {
+    color: #fff;
+  }
+}
 
 .footer__list-item--org-info {
   @media (max-width: 1200px) {
@@ -431,8 +434,6 @@
   @media (max-width: 1249px) {
     padding: 4px 6px;
   }
-
-  &:hover {
-    color: orange;
-  }
 }
+
+

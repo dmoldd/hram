@@ -355,6 +355,12 @@
   @media (max-width: 583px) {
     flex-direction: column;
   }
+
+  &--mobile-disable {
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
 }
 
 .working-hours__title {

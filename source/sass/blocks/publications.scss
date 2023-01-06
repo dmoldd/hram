@@ -89,12 +89,17 @@
   @media (max-width: 540px) {
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 400px minmax(30px, max-content) minmax(70px, max-content) minmax(30px, max-content) 30px;
+    grid-template-rows: min-content minmax(30px, max-content) minmax(70px, max-content) minmax(30px, max-content) 30px;
     column-gap: 0;
-    padding: 0;
+    padding: 0 0 20px 0;
     border-radius: 0;
     box-shadow: none;
-    margin: 0 0 30px 0;
+    margin: 0;
+
+    &:hover .publications__item-img img {
+      height: auto;
+      width: 100%;
+    }
   }
 }
 
