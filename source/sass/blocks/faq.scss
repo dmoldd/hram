@@ -15,7 +15,7 @@
 
   @media (max-width: 540px) {
     font-size: 36px;
-    margin: 40px 0 0 20px;
+    margin: 40px 0 0 0;
   }
 }
 
@@ -31,11 +31,6 @@
   }
 }
 
-.faq__ask-title {
-  font-size: 28px;
-  margin: 10px 0 0 0;
-}
-
 .faq__ask-email {
   text-align: left;
   color: gray;
@@ -47,7 +42,8 @@
   }
 
   @media (max-width: 700px) {
-    padding: 0 20px;
+    padding: 0;
+    text-align: left;
   }
 
   a {
@@ -83,7 +79,7 @@
 
 .questions-list__question-title {
   border-radius: 5px;
-  padding: 30px 30px 30px 60px;
+  padding: 20px 30px 20px 60px;
   // margin: 10px;
   width: 100%;
   border: none;
@@ -93,6 +89,7 @@
   line-height: 42px;
   cursor: pointer;
   position: relative;
+  transition: background-color 0.2s ease-in-out;
 
   @media (max-width: 1199px) {
     font-size: 25px;
@@ -110,30 +107,53 @@
     padding: 15px 10px 15px 40px;
   }
 
+  &:hover,
+  &:focus {
+    background-color: #f5f5f5;
+  }
 
-  &:hover {
-    // background-color: $sky;
+  &:disabled {
+    background-color: #f5f5f5;
+  }
+
+  &:active {
+    background-color: #b9b9b9;
     transition: background-color 0.2s ease-in-out;
   }
 }
+
+// button[checked].questions-list__question-title {
+//   background-color: #b9b9b9;
+// }
 
 button.questions-list__question-title::after {
   content: "+";
   position: absolute;
   left: 20px;
-  top: 33%;
+  top: 25%;
+  height: 100%;
+  font-size: 40px;
+
+  @media (max-width: 785px) {
+    top: 7%;
+  }
+
+  @media (max-width: 550px) {
+    left: 10px;
+    font-size: 35px;
+  }
 }
 
 button.questions-list__question-title.is-opened::after {
-  content: "-"
+  content: "-";
 }
 
-.questions-list__question-inner{
-  padding: 0 0 0 50px;
+.questions-list__question-inner {
+  padding: 0 20px 0 20px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
-  // background-color: $sky;
+  background-color: #f5f5f5;
 
   .questions-list__question-inner {
     margin: 0 auto 10px;

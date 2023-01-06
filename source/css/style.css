@@ -2062,7 +2062,7 @@ span.sim-dot {
 @media (max-width: 540px) {
   .faq__title {
     font-size: 36px;
-    margin: 40px 0 0 20px;
+    margin: 40px 0 0 0;
   }
 }
 
@@ -2080,11 +2080,6 @@ span.sim-dot {
   }
 }
 
-.faq__ask-title {
-  font-size: 28px;
-  margin: 10px 0 0 0;
-}
-
 .faq__ask-email {
   text-align: left;
   color: gray;
@@ -2098,7 +2093,8 @@ span.sim-dot {
 }
 @media (max-width: 700px) {
   .faq__ask-email {
-    padding: 0 20px;
+    padding: 0;
+    text-align: left;
   }
 }
 .faq__ask-email a {
@@ -2135,7 +2131,7 @@ span.sim-dot {
 
 .questions-list__question-title {
   border-radius: 5px;
-  padding: 30px 30px 30px 60px;
+  padding: 20px 30px 20px 60px;
   width: 100%;
   border: none;
   background-color: #eaeaea;
@@ -2144,6 +2140,7 @@ span.sim-dot {
   line-height: 42px;
   cursor: pointer;
   position: relative;
+  transition: background-color 0.2s ease-in-out;
 }
 @media (max-width: 1199px) {
   .questions-list__question-title {
@@ -2164,7 +2161,14 @@ span.sim-dot {
     padding: 15px 10px 15px 40px;
   }
 }
-.questions-list__question-title:hover {
+.questions-list__question-title:hover, .questions-list__question-title:focus {
+  background-color: #f5f5f5;
+}
+.questions-list__question-title:disabled {
+  background-color: #f5f5f5;
+}
+.questions-list__question-title:active {
+  background-color: #b9b9b9;
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -2172,7 +2176,20 @@ button.questions-list__question-title::after {
   content: "+";
   position: absolute;
   left: 20px;
-  top: 33%;
+  top: 25%;
+  height: 100%;
+  font-size: 40px;
+}
+@media (max-width: 785px) {
+  button.questions-list__question-title::after {
+    top: 7%;
+  }
+}
+@media (max-width: 550px) {
+  button.questions-list__question-title::after {
+    left: 10px;
+    font-size: 35px;
+  }
 }
 
 button.questions-list__question-title.is-opened::after {
@@ -2180,10 +2197,11 @@ button.questions-list__question-title.is-opened::after {
 }
 
 .questions-list__question-inner {
-  padding: 0 0 0 50px;
+  padding: 0 20px 0 20px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
+  background-color: #f5f5f5;
 }
 .questions-list__question-inner .questions-list__question-inner {
   margin: 0 auto 10px;
