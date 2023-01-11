@@ -1,6 +1,4 @@
 .contacts-main {
-
-
   @media (max-width: 540px) {
     padding: 0;
   }
@@ -14,6 +12,12 @@
   padding: 0 0 0 20px;
   font-size: 64px;
   font-weight: 400;
+
+  @media (max-width: 540px) {
+    font-size: 36px;
+    padding: 0 10px 0 10px;
+    width: fit-content;
+  }
 }
 
 .contacts-main__iframe {
