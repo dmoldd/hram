@@ -27,20 +27,12 @@
   width: 30%;
   display: grid;
   grid-template-columns: 75% 25%;
-  grid-template-rows: 310px
-                      30px
-                      30px
-                      minmax(70px, max-content);
+  grid-template-rows: 310px 30px 30px minmax(70px, max-content);
   row-gap: 20px;
-  grid-template-areas:  "D D"
-                        "C C"
-                        "A A"
-                        "B E";
-  background-color: #eaeaea;
+  grid-template-areas: "D D" "C C" "A A" "B E";
+  background-color: $publ-color;
   margin: 25px 25px;
   padding: 20px;
-  // border-radius: 20px;
-  box-shadow: 7px 7px 18px -2px #ccc, -7px -7px 18px -2px #ccc;
   transition: $transition-fast;
 
   &:hover {
@@ -59,17 +51,14 @@
   }
 
   @media (max-width: 1037px) and (min-width: 541px) {
-  width: 100%;
-  grid-template-columns: 310px 1fr;
-  grid-template-rows: minmax(30px, max-content) minmax(70px, max-content) minmax(30px, max-content) 30px;
-  row-gap: 20px;
-  column-gap: 30px;
-  grid-template-areas:  "D A"
-                        "D B"
-                        "D C"
-                        "D E";
+    width: 100%;
+    grid-template-columns: 310px 1fr;
+    grid-template-rows: minmax(30px, max-content) minmax(70px, max-content) minmax(30px, max-content) 30px;
+    row-gap: 20px;
+    column-gap: 30px;
+    grid-template-areas: "D A" "D B" "D C" "D E";
 
-  &:hover .publications__item-img img {
+    &:hover .publications__item-img img {
       height: 100%;
       width: 100%;
     }
@@ -79,11 +68,7 @@
     width: 380px;
     grid-template-columns: 340px;
     grid-template-rows: 310px minmax(30px, max-content) minmax(70px, max-content) minmax(30px, max-content) 30px;
-    grid-template-areas: "D"
-    "A"
-    "B"
-    "C"
-    "E";
+    grid-template-areas: "D" "A" "B" "C" "E";
   }
 
   @media (max-width: 540px) {
@@ -115,7 +100,6 @@
 
 .publications__item-img {
   grid-area: D;
-  // border-radius: 20px;
   overflow: hidden;
   transition: $transition-slow;
 
@@ -141,7 +125,7 @@
   grid-area: C;
   margin: 0;
   font-size: 18px;
-  color: #555151;
+  color: $publ-date;
 
   @media (max-width: 540px) {
     text-align: center;
@@ -169,19 +153,11 @@
   &:hover {
     font-size: 22px;
     transition: $transition-slow;
-    color: white;
+    color: $white;
   }
 
   @media (max-width: 790px) {
     position: static;
     text-align: center;
   }
-}
-
-.fa-solid {
-
-}
-
-.fa-arrow-right-long {
-
 }

@@ -30,7 +30,7 @@
     color: $sky;
 
     @media (max-width: 800px) {
-      color: rgb(107, 107, 107);
+      color: $color-current-nav;
     }
   }
 }
@@ -89,11 +89,11 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 0;
-    background: linear-gradient(180deg, transparent 0,rgba(0, 0, 0, 0.1) 100%) bottom/800px 10px no-repeat #fcfcfc;
+    background: $nav-bottom-gradient;
   }
 
   .main-nav__list .main-nav__item {
-    border-bottom: 1px solid rgb(214, 214, 214);
+    border-bottom: 1px solid $nav-item-bottom-gradient;
     text-align: center;
     font-size: 40px;
     margin: 0;
@@ -105,7 +105,7 @@
   }
 
   .main-nav__burger {
-    background-image: url(../img/svg/burger-close.svg);
+    background-image: url("../img/svg/burger-close.svg");
     position: absolute;
     top: 0;
     left: 0;
@@ -115,4 +115,3 @@
     display: none;
   }
 }
-

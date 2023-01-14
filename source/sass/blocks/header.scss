@@ -1,16 +1,15 @@
 .header {
   min-height: 85px;
-  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%) no-repeat center bottom / 1560px 1px;
+  background: $header-line;
 
   @media (max-width: 800px) {
     min-height: 70px;
-    background: linear-gradient(90deg, rgb(126, 126, 126) 0%, rgb(126, 126, 126) 100%) no-repeat center bottom / 1560px 1px;
+    background: $header-line-mobile;
   }
 }
 
 .header .container {
   position: relative;
-  z-index: 3;
 
   @media (max-width: 800px) {
     padding: 0;

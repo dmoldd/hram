@@ -263,7 +263,6 @@ ul, li {
 
 .header .container {
   position: relative;
-  z-index: 3;
 }
 @media (max-width: 800px) {
   .header .container {
@@ -371,7 +370,7 @@ ul, li {
   display: none;
 }
 .main-nav--opened .main-nav__burger {
-  background-image: url(../img/svg/burger-close.svg);
+  background-image: url("../img/svg/burger-close.svg");
   position: absolute;
   top: 0;
   left: 0;
@@ -694,37 +693,6 @@ ul, li {
   text-align: start;
 }
 
-.hero__list-item {
-  background-color: #5b8ccb;
-  margin: 0 2px 0 0;
-  padding: 20px;
-}
-.hero__list-item:first-child {
-  width: 527px;
-}
-.hero__list-item:nth-child(2) {
-  width: 524px;
-}
-.hero__list-item:last-child {
-  width: 504px;
-  margin: 0;
-}
-
-.hero__list-item-title {
-  display: block;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 21px;
-  color: #fdfdfd;
-  margin: 15px 0 0 0;
-}
-
-.hero__text {
-  font-size: 24px;
-  color: #cecece;
-  margin: 15px 0 0 0;
-}
-
 .hero .container .working-hours {
   position: absolute;
   width: 180px;
@@ -742,11 +710,6 @@ ul, li {
     right: 20px;
     top: 10px;
     width: 380px;
-  }
-}
-@media (max-width: 1220px) and (min-width: 800px) {
-  .hero .container .working-hours {
-    width: 335px;
   }
 }
 @media (max-width: 1220px) and (min-width: 800px) {
@@ -934,7 +897,6 @@ ul, li {
   background-color: #eaeaea;
   margin: 25px 25px;
   padding: 20px;
-  box-shadow: 7px 7px 18px -2px #ccc, -7px -7px 18px -2px #ccc;
   transition: all 0.2s ease-in-out;
 }
 .publications__item:hover {
@@ -1057,7 +1019,7 @@ ul, li {
 .publications__item-link:hover {
   font-size: 22px;
   transition: all 0.5s ease-in-out;
-  color: white;
+  color: #fff;
 }
 @media (max-width: 790px) {
   .publications__item-link {
@@ -1535,7 +1497,7 @@ span.sim-dot {
 
 .news-main__list {
   display: flex;
-  outline: 1px solid gray;
+  outline: 1px solid #808080;
 }
 @media (max-width: 1199px) {
   .news-main__list {
@@ -1560,7 +1522,7 @@ span.sim-dot {
 
 .news-main__list-item {
   width: 33.3%;
-  border-right: 1px solid gray;
+  border-right: 1px solid #808080;
 }
 .news-main__list-item:first-child .news-main__list-item-link .news-main__img img {
   width: auto;
@@ -1609,10 +1571,10 @@ span.sim-dot {
 @media (max-width: 1199px) {
   .news-main__list-item {
     width: 100%;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #808080;
   }
   .news-main__list-item:last-child {
-    border-right: 1px solid gray;
+    border-right: 1px solid #808080;
     width: 100%;
   }
 }
@@ -2058,7 +2020,7 @@ span.sim-dot {
 
 .faq__ask-email {
   text-align: left;
-  color: gray;
+  color: #808080;
   line-height: 1.5;
 }
 @media (max-width: 1000px) {
@@ -2116,7 +2078,7 @@ span.sim-dot {
   line-height: 42px;
   cursor: pointer;
   position: relative;
-  transition: background-color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 @media (max-width: 1199px) {
   .questions-list__question-title {
@@ -2137,15 +2099,12 @@ span.sim-dot {
     padding: 15px 10px 15px 40px;
   }
 }
-.questions-list__question-title:hover, .questions-list__question-title:focus {
-  background-color: #f5f5f5;
-}
-.questions-list__question-title:disabled {
+.questions-list__question-title:hover {
   background-color: #f5f5f5;
 }
 .questions-list__question-title:active {
   background-color: #b9b9b9;
-  transition: background-color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 button.questions-list__question-title::after {
@@ -2225,7 +2184,6 @@ button.questions-list__question-title.is-opened::after {
     padding: 0 0 10px 0;
   }
 }
-
 @media (max-width: 1200px) {
   .footer__list-item--feedback {
     order: 2;
@@ -2280,7 +2238,7 @@ button.questions-list__question-title.is-opened::after {
 
 .footer__list-item-title {
   text-align: right;
-  color: orange;
+  color: #ffa500;
   font-size: 29px;
   font-weight: 700;
 }
@@ -2407,7 +2365,7 @@ button.questions-list__question-title.is-opened::after {
 }
 .footer__list-item-link:hover,
 .footer__list-item-text:hover {
-  color: orange;
+  color: #ffa500;
 }
 
 .footer__list-item-text {
@@ -2439,60 +2397,45 @@ button.questions-list__question-title.is-opened::after {
   }
 }
 
-.footer__list-youtube {
-  grid-area: C;
-  fill: #ff1616;
+.footer__list-youtube,
+.footer__list-vk,
+.footer__list-instagram,
+.footer__list-mail {
   transition: all 0.2s ease-in-out;
 }
-.footer__list-youtube svg {
+.footer__list-youtube svg,
+.footer__list-vk svg,
+.footer__list-instagram svg,
+.footer__list-mail svg {
   transition: all 0.2s ease-in-out;
 }
-.footer__list-youtube svg:hover {
+.footer__list-youtube svg:hover,
+.footer__list-vk svg:hover,
+.footer__list-instagram svg:hover,
+.footer__list-mail svg:hover {
   transition: all 0.2s ease-in-out;
   filter: drop-shadow(0 0 10px rgb(74, 74, 74));
   padding: 5px 0 0 0;
+}
+
+.footer__list-youtube {
+  grid-area: C;
+  fill: #ff1616;
 }
 
 .footer__list-vk {
   grid-area: B;
   fill: #0000df;
-  transition: all 0.2s ease-in-out;
-}
-.footer__list-vk svg {
-  transition: all 0.2s ease-in-out;
-}
-.footer__list-vk svg:hover {
-  transition: all 0.2s ease-in-out;
-  filter: drop-shadow(0 0 10px rgb(74, 74, 74));
-  padding: 5px 0 0 0;
 }
 
 .footer__list-instagram {
   grid-area: D;
-  fill: pink;
-  transition: all 0.2s ease-in-out;
-}
-.footer__list-instagram svg {
-  transition: all 0.2s ease-in-out;
-}
-.footer__list-instagram svg:hover {
-  transition: all 0.2s ease-in-out;
-  filter: drop-shadow(0 0 10px rgb(74, 74, 74));
-  padding: 5px 0 0 0;
+  fill: #ffc0cb;
 }
 
 .footer__list-mail {
   grid-area: E;
   fill: #0000df;
-  transition: all 0.2s ease-in-out;
-}
-.footer__list-mail svg {
-  transition: all 0.2s ease-in-out;
-}
-.footer__list-mail svg:hover {
-  transition: all 0.2s ease-in-out;
-  filter: drop-shadow(0 0 10px rgb(74, 74, 74));
-  padding: 5px 0 0 0;
 }
 
 .footer__developed {
@@ -2617,18 +2560,10 @@ button.questions-list__question-title.is-opened::after {
   color: rgb(123, 107, 107);
 }
 .footer__link:hover {
-  color: orange;
+  color: #ffa500;
 }
 
-.footer__organization-info,
-.footer__organization-inn,
-.footer__organization-kpp,
-.footer__organization-ogrn,
-.footer__organization-bank-order,
-.footer__organization-ks,
-.footer__organization-bik,
-.footer__organization-bank-inn,
-.footer__organization-bank-ogrn {
+.footer__organization-info {
   padding: 5px 10px;
   margin: 0 10px 0 0;
   color: #fff;
@@ -2636,67 +2571,27 @@ button.questions-list__question-title.is-opened::after {
   font-size: 24px;
 }
 @media (max-width: 1396px) {
-  .footer__organization-info,
-.footer__organization-inn,
-.footer__organization-kpp,
-.footer__organization-ogrn,
-.footer__organization-bank-order,
-.footer__organization-ks,
-.footer__organization-bik,
-.footer__organization-bank-inn,
-.footer__organization-bank-ogrn {
+  .footer__organization-info {
     padding: 5px 6px;
   }
 }
 @media (max-width: 1380px) {
-  .footer__organization-info,
-.footer__organization-inn,
-.footer__organization-kpp,
-.footer__organization-ogrn,
-.footer__organization-bank-order,
-.footer__organization-ks,
-.footer__organization-bik,
-.footer__organization-bank-inn,
-.footer__organization-bank-ogrn {
+  .footer__organization-info {
     font-size: 23px;
   }
 }
 @media (max-width: 1345px) {
-  .footer__organization-info,
-.footer__organization-inn,
-.footer__organization-kpp,
-.footer__organization-ogrn,
-.footer__organization-bank-order,
-.footer__organization-ks,
-.footer__organization-bik,
-.footer__organization-bank-inn,
-.footer__organization-bank-ogrn {
+  .footer__organization-info {
     font-size: 22px;
   }
 }
 @media (max-width: 1311px) {
-  .footer__organization-info,
-.footer__organization-inn,
-.footer__organization-kpp,
-.footer__organization-ogrn,
-.footer__organization-bank-order,
-.footer__organization-ks,
-.footer__organization-bik,
-.footer__organization-bank-inn,
-.footer__organization-bank-ogrn {
+  .footer__organization-info {
     font-size: 21px;
   }
 }
 @media (max-width: 1249px) {
-  .footer__organization-info,
-.footer__organization-inn,
-.footer__organization-kpp,
-.footer__organization-ogrn,
-.footer__organization-bank-order,
-.footer__organization-ks,
-.footer__organization-bik,
-.footer__organization-bank-inn,
-.footer__organization-bank-ogrn {
+  .footer__organization-info {
     padding: 4px 6px;
   }
 }

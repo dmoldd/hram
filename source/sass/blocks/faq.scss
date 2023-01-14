@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
 
-
   @media (max-width: 1000px) {
     flex-direction: column;
   }
@@ -33,7 +32,7 @@
 
 .faq__ask-email {
   text-align: left;
-  color: gray;
+  color: $gray;
   line-height: 1.5;
 
   @media (max-width: 1000px) {
@@ -70,7 +69,7 @@
 }
 
 .questions-list__question {
-  background-color: #eaeaea;
+  background-color: $question-list-color;
   margin: 0 0 15px 0;
   border-radius: 5px;
   font-size: 18px;
@@ -83,13 +82,13 @@
   // margin: 10px;
   width: 100%;
   border: none;
-  background-color: #eaeaea;
+  background-color: $question-list-color;
   text-align: left;
   font-size: 30px;
   line-height: 42px;
   cursor: pointer;
   position: relative;
-  transition: background-color 0.2s ease-in-out;
+  transition: $transition-fast;
 
   @media (max-width: 1199px) {
     font-size: 25px;
@@ -107,24 +106,15 @@
     padding: 15px 10px 15px 40px;
   }
 
-  &:hover,
-  &:focus {
-    background-color: #f5f5f5;
-  }
-
-  &:disabled {
-    background-color: #f5f5f5;
+  &:hover {
+    background-color: $question-list-color-hover;
   }
 
   &:active {
-    background-color: #b9b9b9;
-    transition: background-color 0.2s ease-in-out;
+    background-color: $question-list-color-active;
+    transition: $transition-fast;
   }
 }
-
-// button[checked].questions-list__question-title {
-//   background-color: #b9b9b9;
-// }
 
 button.questions-list__question-title::after {
   content: "+";
@@ -153,7 +143,7 @@ button.questions-list__question-title.is-opened::after {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
-  background-color: #f5f5f5;
+  background-color: $question-list-inner;
 
   .questions-list__question-inner {
     margin: 0 auto 10px;
