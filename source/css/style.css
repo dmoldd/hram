@@ -2142,6 +2142,10 @@ button.questions-list__question-title.is-opened::after {
   margin: 0 auto 10px;
 }
 
+.slick-track {
+  display: flex;
+}
+
 .footer .container {
   position: relative;
   padding: 0;

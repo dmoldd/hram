@@ -3,7 +3,9 @@
 // Ограничевающая оболочка
 .slick-list {}
 // Лента слайдов
-.slick-track {}
+.slick-track {
+  display: flex;
+}
 
 // Слайд
 .slick-slide {}
