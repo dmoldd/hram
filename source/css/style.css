@@ -2208,7 +2208,7 @@ button.questions-list__question-title.is-opened::after {
 
 .slider .slick-prev {
   left: 0;
-  background-image: url("../../img/svg/arrow-left.svg");
+  background-image: url("../img/svg/arrow-left.svg");
   background-size: 100% 100%;
 }
 @media (max-width: 890px) {
@@ -2229,7 +2229,7 @@ button.questions-list__question-title.is-opened::after {
 
 .slider .slick-next {
   right: 0;
-  background-image: url("../../img/svg/arrow-right.svg");
+  background-image: url("../img/svg/arrow-right.svg");
   background-size: 100% 100%;
 }
 @media (max-width: 890px) {
