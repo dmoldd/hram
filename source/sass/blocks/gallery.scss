@@ -1,0 +1,23 @@
+.gallery__title {
+  font-size: 64px;
+  font-weight: 400;
+  width: 100%;
+
+  @media (max-width: 750px) {
+    font-size: 30px;
+    margin: 0 0 0 20px;
+  }
+}
+
+.gallery__desc {
+  width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.5;
+
+  @media (max-width: 840px) {
+    margin: 20px 0 20px 0;
+    width: 100%;
+    padding: 0 20px 0 20px;
+  }
+}
