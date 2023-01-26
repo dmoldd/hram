@@ -2275,16 +2275,18 @@ button.questions-list__question-title.is-opened::after {
 }
 
 .gallery__items {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 500px);
+  justify-content: center;
   gap: 20px;
   margin: 0 0 20px 0;
   transition: all 0.5s ease-in-out;
 }
 
 .gallery__item {
+  border: 1px solid #808080;
   padding: 20px;
-  width: calc(50% - 10px);
+  width: 100%;
   display: flex;
   flex-direction: column;
   transition: all 0.2s ease-in-out;
@@ -2310,7 +2312,7 @@ button.questions-list__question-title.is-opened::after {
 
 .gallery__img {
   width: 100%;
-  height: 450px;
+  height: 245px;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
 }
