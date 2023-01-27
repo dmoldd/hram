@@ -11,7 +11,8 @@
 
   @media (max-width: 540px) {
     font-size: 36px;
-    margin: 40px 0 0 20px;
+    margin: 40px 0 0 0;
+    padding: 0 0 0 20px;
   }
 }
 
@@ -20,6 +21,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (max-width: 540px) {
+    margin: 20px 0 0 0;
+  }
 }
 
 .publications__item {
@@ -74,7 +79,7 @@
   @media (max-width: 540px) {
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: min-content minmax(30px, max-content) minmax(70px, max-content) minmax(30px, max-content) 30px;
+    grid-template-rows: min-content minmax(30px, max-content) minmax(30px, max-content) 0 30px;
     column-gap: 0;
     padding: 0 0 20px 0;
     border-radius: 0;
@@ -84,6 +89,11 @@
     &:hover .publications__item-img img {
       height: auto;
       width: 100%;
+      background-color: $publ-color;
+    }
+
+    &:hover {
+      background-color: $publ-color;
     }
   }
 }
@@ -128,7 +138,7 @@
   color: $publ-date;
 
   @media (max-width: 540px) {
-    text-align: center;
+    display: none;
   }
 }
 
@@ -159,5 +169,11 @@
   @media (max-width: 790px) {
     position: static;
     text-align: center;
+  }
+
+  @media (max-width: 540px) {
+    &:hover {
+      color: $black;
+    }
   }
 }
