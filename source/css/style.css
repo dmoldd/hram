@@ -2454,6 +2454,34 @@ button.questions-list__question-title.is-opened::after {
   }
 }
 
+.error404 .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.error404__logo {
+  margin: 50px 0 0 0;
+  width: 300px;
+  height: auto;
+  align-self: center;
+  fill: #4b5664;
+}
+
+.error404__title {
+  text-align: center;
+  margin: 0;
+  color: #4b5664;
+  text-transform: uppercase;
+}
+.error404__title:nth-of-type(1) {
+  font-size: 47px;
+  margin: 25px 0 0 0;
+}
+.error404__title:nth-of-type(2) {
+  font-size: 24px;
+  margin: 8px 0 61px 0;
+}
+
 .footer .container {
   position: relative;
   padding: 0;
